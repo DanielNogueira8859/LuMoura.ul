@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             groupBox1 = new GroupBox();
             BtExcluir = new Guna.UI2.WinForms.Guna2Button();
             BtAtualizar = new Guna.UI2.WinForms.Guna2Button();
@@ -87,10 +87,11 @@
             groupBox1.Size = new Size(1207, 385);
             groupBox1.TabIndex = 14;
             groupBox1.TabStop = false;
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // BtExcluir
             // 
-            BtExcluir.CustomizableEdges = customizableEdges1;
+            BtExcluir.CustomizableEdges = customizableEdges10;
             BtExcluir.DisabledState.BorderColor = Color.DarkGray;
             BtExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
             BtExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -100,7 +101,7 @@
             BtExcluir.ForeColor = Color.White;
             BtExcluir.Location = new Point(1051, 56);
             BtExcluir.Name = "BtExcluir";
-            BtExcluir.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            BtExcluir.ShadowDecoration.CustomizableEdges = customizableEdges11;
             BtExcluir.Size = new Size(96, 23);
             BtExcluir.TabIndex = 34;
             BtExcluir.Text = "Excluir";
@@ -108,7 +109,7 @@
             // 
             // BtAtualizar
             // 
-            BtAtualizar.CustomizableEdges = customizableEdges3;
+            BtAtualizar.CustomizableEdges = customizableEdges12;
             BtAtualizar.DisabledState.BorderColor = Color.DarkGray;
             BtAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -118,7 +119,7 @@
             BtAtualizar.ForeColor = Color.White;
             BtAtualizar.Location = new Point(949, 56);
             BtAtualizar.Name = "BtAtualizar";
-            BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges13;
             BtAtualizar.Size = new Size(96, 23);
             BtAtualizar.TabIndex = 33;
             BtAtualizar.Text = "Atualizar";
@@ -126,7 +127,7 @@
             // 
             // BtBuscar
             // 
-            BtBuscar.CustomizableEdges = customizableEdges5;
+            BtBuscar.CustomizableEdges = customizableEdges14;
             BtBuscar.DisabledState.BorderColor = Color.DarkGray;
             BtBuscar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtBuscar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -136,7 +137,7 @@
             BtBuscar.ForeColor = Color.White;
             BtBuscar.Location = new Point(847, 56);
             BtBuscar.Name = "BtBuscar";
-            BtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            BtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges15;
             BtBuscar.Size = new Size(96, 23);
             BtBuscar.TabIndex = 32;
             BtBuscar.Text = "Buscar";
@@ -144,7 +145,7 @@
             // 
             // BtCadastrar
             // 
-            BtCadastrar.CustomizableEdges = customizableEdges7;
+            BtCadastrar.CustomizableEdges = customizableEdges16;
             BtCadastrar.DisabledState.BorderColor = Color.DarkGray;
             BtCadastrar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtCadastrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -154,7 +155,7 @@
             BtCadastrar.ForeColor = Color.White;
             BtCadastrar.Location = new Point(754, 117);
             BtCadastrar.Name = "BtCadastrar";
-            BtCadastrar.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            BtCadastrar.ShadowDecoration.CustomizableEdges = customizableEdges17;
             BtCadastrar.Size = new Size(110, 26);
             BtCadastrar.TabIndex = 31;
             BtCadastrar.Text = "Cadastrar";
@@ -171,7 +172,7 @@
             BtMenu.ForeColor = Color.White;
             BtMenu.Location = new Point(24, 22);
             BtMenu.Name = "BtMenu";
-            BtMenu.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            BtMenu.ShadowDecoration.CustomizableEdges = customizableEdges18;
             BtMenu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             BtMenu.Size = new Size(74, 43);
             BtMenu.TabIndex = 30;

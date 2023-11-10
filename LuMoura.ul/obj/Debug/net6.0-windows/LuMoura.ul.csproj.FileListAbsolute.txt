@@ -90,3 +90,7 @@ C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\L
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.CotroleCadastro.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastro.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.CotroleCadastro.resources
+C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\Guna.UI2.dll
+C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastroADM.resources
