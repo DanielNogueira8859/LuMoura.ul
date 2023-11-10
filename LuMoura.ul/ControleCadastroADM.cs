@@ -34,7 +34,7 @@ namespace LuMoura.ul
 
             MessageBox.Show("Atualizado");
 
-            TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = "";
+            TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = ""; 
         }
 
         private void BtCadastrar_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace LuMoura.ul
                         MessageBox.Show("Falha ao Excluir o Cadastro.");
                     }
 
-                    TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = "";
+                    TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = ""; TxtCodigo.Text = "";
                 }
             }
         }
