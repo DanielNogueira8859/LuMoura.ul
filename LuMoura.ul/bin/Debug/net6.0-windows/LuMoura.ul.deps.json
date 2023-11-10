@@ -8,11 +8,23 @@
     ".NETCoreApp,Version=v6.0": {
       "LuMoura.ul/1.0.0": {
         "dependencies": {
+          "Guna.UI2.WinForms": "2.0.4.5",
           "Hora": "0.0.3",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "LuMoura.ul.dll": {}
+        }
+      },
+      "Guna.UI2.WinForms/2.0.4.5": {
+        "dependencies": {
+          "System.Management": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Guna.UI2.dll": {
+            "assemblyVersion": "2.0.4.5",
+            "fileVersion": "2.0.4.5"
+          }
         }
       },
       "Hora/0.0.3": {
@@ -187,6 +199,7 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.CodeDom/6.0.0": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -405,6 +418,25 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0"
+        }
+      },
+      "System.Management/6.0.0": {
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Management.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
         }
       },
       "System.Net.Http/4.3.0": {
@@ -821,6 +853,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Guna.UI2.WinForms/2.0.4.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lR50db4NzBC0QLAr27q9nrpYsIfWKjOgGnROrPi8AxbwLFE3nTup6ZOpVE/vbrr86eLV//8ys9sIW7j0ix2h+Q==",
+      "path": "guna.ui2.winforms/2.0.4.5",
+      "hashPath": "guna.ui2.winforms.2.0.4.5.nupkg.sha512"
+    },
     "Hora/0.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1017,6 +1056,13 @@
       "path": "system.buffers/4.3.0",
       "hashPath": "system.buffers.4.3.0.nupkg.sha512"
     },
+    "System.CodeDom/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "path": "system.codedom/6.0.0",
+      "hashPath": "system.codedom.6.0.0.nupkg.sha512"
+    },
     "System.Collections/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1156,6 +1202,13 @@
       "sha512": "sha512-PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
+    },
+    "System.Management/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sHsESYMmPDhQuOC66h6AEOs/XowzKsbT9srMbX71TCXP58hkpn1BqBjdmKj1+DCA/WlBETX1K5WjQHwmV0Txrg==",
+      "path": "system.management/6.0.0",
+      "hashPath": "system.management.6.0.0.nupkg.sha512"
     },
     "System.Net.Http/4.3.0": {
       "type": "package",

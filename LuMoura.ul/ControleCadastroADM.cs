@@ -26,7 +26,7 @@ namespace LuMoura.ul
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("Update Cliente set Nome = '" + Nome + " ', CPF = '" + CPF + "',Telefone = '" + Telefone + "', Email = '" + Email + "' where IdCliente = " + TxtCodigo.Text, conn);
+            SqlCommand cmd = new SqlCommand("Update Cliente set Nome = '" + Nome + " ', CPF = '" + CPF + "',Telefone = '" + Telefone + "', Email = '" + Email + "' where IdCliente = '" + TxtCodigo.Text + "'" , conn);
 
             cmd.ExecuteNonQuery();
 
@@ -62,7 +62,7 @@ namespace LuMoura.ul
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("Select * from Cliente where idCliente=" + TxtCodigo.Text, conn);
+            SqlCommand cmd = new SqlCommand("Select * from Cliente where idCliente= '" + TxtCodigo.Text + "'", conn);
 
             //var dr = cmd.ExecuteReader();
             SqlDataReader dr = cmd.ExecuteReader();
@@ -125,6 +125,22 @@ namespace LuMoura.ul
                     TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = "";
                 }
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            //SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
+            //conn.Open();
+
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dr;
+            dataGridView1.DataSource = bs;
         }
     }
 }
