@@ -1,0 +1,149 @@
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.exe
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.deps.json
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.runtimeconfig.json
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.pdb
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.AssemblyReference.cache
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.Servicos.resources
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.GenerateResource.cache
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AssemblyInfoInputs.cache
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AssemblyInfo.cs
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.CoreCompileInputs.cache
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.CopyComplete
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\refint\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.pdb
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.genruntimeconfig.cache
+C:\Users\janaina.mslima\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ref\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.exe
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.deps.json
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.runtimeconfig.json
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.pdb
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.AssemblyReference.cache
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AdicionarServicos.resources
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AtualizarServicos.resources
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.ExcluirServico.resources
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.GenerateResource.cache
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AssemblyInfoInputs.cache
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AssemblyInfo.cs
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.CoreCompileInputs.cache
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.CopyComplete
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\refint\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.pdb
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.genruntimeconfig.cache
+C:\Users\janaina.mslima\OneDrive - SENAC - SP\Área de Trabalho\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ref\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.exe
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.deps.json
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.runtimeconfig.json
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\ProjetoIntegrador.pdb
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.AssemblyReference.cache
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AdicionarServicos.resources
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AtualizarServicos.resources
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.ExcluirServico.resources
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.GenerateResource.cache
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AssemblyInfoInputs.cache
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AssemblyInfo.cs
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.CoreCompileInputs.cache
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.CopyComplete
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\refint\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.pdb
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.genruntimeconfig.cache
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ref\ProjetoIntegrador.dll
+C:\Users\janaina.mslima\source\repos\Nova pasta\ProjetoIntegrador\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.Properties.Resources.resources
