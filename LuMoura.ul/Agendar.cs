@@ -4,12 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace LuMoura.ul
 {
     internal class Agendar
     {
+        public void exibirHora(DataGridView dataGridView2)
+        {
+            SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
 
+
+
+            conn.Open();
+
+
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Horarios", conn);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dr;
+            dataGridView2.DataSource = bs;
+
+        }
         public void Exibir_Servicos( ComboBox item)
         {
             // usar no senac//

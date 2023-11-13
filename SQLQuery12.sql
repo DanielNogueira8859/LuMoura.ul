@@ -42,10 +42,7 @@ select * from Servicos
 drop table Servicos
 
 
-CREATE TABLE Horarios (
-    HorarioID INT IDENTITY(1, 1) PRIMARY KEY,
-    Hora TIME NOT NULL
-);
+
 
 CREATE TABLE Agendamentos (
     AgendamentoID INT IDENTITY(1, 1) PRIMARY KEY,
@@ -110,10 +107,21 @@ CREATE TABLE Login
 );
 
 DECLARE @hora TIME = '09:00';
+
+-- Deleta os registros existentes para reiniciar a tabela
+DELETE FROM Horarios;
+
 WHILE @hora <= '17:00'
 BEGIN
-    INSERT INTO Horarios (Hora)
-    VALUES (@hora);
+    INSERT INTO Horarios (Hora, Disponivel)
+    VALUES (@hora, 1); -- Assumindo que todos os horários inicialmente estão disponíveis
     SET @hora = DATEADD(HOUR, 1, @hora);
 END;
-select * from Horarios
+ select * from Horarios
+ drop table Horarios
+
+ CREATE TABLE Horarios (
+    HorarioID INT IDENTITY(1, 1) PRIMARY KEY,
+    Hora TIME NOT NULL,
+    Disponivel BIT NOT NULL,
+);

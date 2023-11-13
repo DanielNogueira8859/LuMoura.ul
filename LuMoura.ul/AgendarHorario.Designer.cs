@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             monthCalendar1 = new MonthCalendar();
             textNome = new TextBox();
             textTelefone = new TextBox();
@@ -40,29 +39,20 @@
             comboServiço = new ComboBox();
             textDescricao = new TextBox();
             groupBox1 = new GroupBox();
+            button3 = new Button();
             dataGridView2 = new DataGridView();
             button2 = new Button();
             button1 = new Button();
             label5 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(526, 291);
-            label1.Name = "label1";
-            label1.Size = new Size(48, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Agenda";
-            // 
             // monthCalendar1
             // 
-            monthCalendar1.Location = new Point(515, 315);
+            monthCalendar1.Location = new Point(259, 355);
             monthCalendar1.Margin = new Padding(9, 9, 9, 10);
             monthCalendar1.Name = "monthCalendar1";
             monthCalendar1.TabIndex = 1;
@@ -88,7 +78,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(490, 34);
+            label2.Location = new Point(501, 37);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
             label2.TabIndex = 5;
@@ -97,7 +87,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(490, 63);
+            label3.Location = new Point(497, 61);
             label3.Name = "label3";
             label3.Size = new Size(51, 15);
             label3.TabIndex = 6;
@@ -106,7 +96,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(490, 87);
+            label4.Location = new Point(74, 299);
             label4.Name = "label4";
             label4.Size = new Size(45, 15);
             label4.TabIndex = 7;
@@ -114,7 +104,7 @@
             // 
             // BtnCadastar
             // 
-            BtnCadastar.Location = new Point(799, 547);
+            BtnCadastar.Location = new Point(22, 538);
             BtnCadastar.Name = "BtnCadastar";
             BtnCadastar.Size = new Size(170, 23);
             BtnCadastar.TabIndex = 8;
@@ -128,22 +118,22 @@
             dataGridView1.Location = new Point(6, 22);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(412, 162);
+            dataGridView1.Size = new Size(480, 137);
             dataGridView1.TabIndex = 9;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // comboServiço
             // 
             comboServiço.FormattingEnabled = true;
-            comboServiço.Location = new Point(564, 90);
+            comboServiço.Location = new Point(0, 317);
             comboServiço.Name = "comboServiço";
-            comboServiço.Size = new Size(405, 23);
+            comboServiço.Size = new Size(235, 23);
             comboServiço.TabIndex = 10;
             comboServiço.SelectedIndexChanged += comboServiço_SelectedIndexChanged;
             // 
             // textDescricao
             // 
-            textDescricao.Location = new Point(564, 127);
+            textDescricao.Location = new Point(564, 87);
             textDescricao.Multiline = true;
             textDescricao.Name = "textDescricao";
             textDescricao.Size = new Size(405, 72);
@@ -159,7 +149,6 @@
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(monthCalendar1);
             groupBox1.Controls.Add(textDescricao);
-            groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(comboServiço);
             groupBox1.Controls.Add(textNome);
             groupBox1.Controls.Add(dataGridView1);
@@ -170,24 +159,35 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Location = new Point(12, 31);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1000, 584);
+            groupBox1.Size = new Size(1000, 570);
             groupBox1.TabIndex = 12;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             groupBox1.Enter += groupBox1_Enter;
             // 
+            // button3
+            // 
+            button3.Location = new Point(171, 165);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 22;
+            button3.Text = "Preencher";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(0, 315);
+            dataGridView2.Location = new Point(0, 355);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(418, 69);
+            dataGridView2.Size = new Size(235, 162);
             dataGridView2.TabIndex = 21;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // button2
             // 
-            button2.Location = new Point(87, 190);
+            button2.Location = new Point(90, 165);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 14;
@@ -197,7 +197,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(6, 190);
+            button1.Location = new Point(9, 165);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 13;
@@ -208,28 +208,18 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(490, 127);
+            label5.Location = new Point(497, 87);
             label5.Name = "label5";
             label5.Size = new Size(58, 15);
             label5.TabIndex = 12;
             label5.Text = "Descrição";
             label5.Click += label5_Click;
             // 
-            // button3
-            // 
-            button3.Location = new Point(222, 188);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 22;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
             // AgendarHorario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1035, 613);
+            ClientSize = new Size(1035, 614);
             Controls.Add(groupBox1);
             Name = "AgendarHorario";
             Text = "AgendarHorario";
@@ -242,8 +232,6 @@
         }
 
         #endregion
-
-        private Label label1;
         private TextBox textNome;
         private TextBox textTelefone;
         private Label label2;

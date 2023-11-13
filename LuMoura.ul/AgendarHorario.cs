@@ -26,7 +26,7 @@ namespace LuMoura.ul
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            
+
 
         }
 
@@ -104,8 +104,8 @@ namespace LuMoura.ul
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ControleCadastroADM areaCliente_Cadastro = new ControleCadastroADM();
-            areaCliente_Cadastro.Show();
+            ControleCadastroADM controleCadastroADM = new ControleCadastroADM();
+            controleCadastroADM.Show();
 
 
         }
@@ -138,6 +138,10 @@ namespace LuMoura.ul
 
         private void AgendarHorario_Load(object sender, EventArgs e)
         {
+
+            Agendar horario = new Agendar();
+            horario.exibirHora(dataGridView2);
+
             string servicoSelecionado = comboServiço.SelectedItem?.ToString();
 
             // Verifica se há um item selecionado antes de chamar o método
@@ -185,6 +189,11 @@ namespace LuMoura.ul
                     }
                 }
             }
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
