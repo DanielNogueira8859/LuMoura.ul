@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,8 @@ namespace LuMoura.ul
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+            
+
         }
 
         private void textNome_TextChanged(object sender, EventArgs e)
@@ -44,18 +47,23 @@ namespace LuMoura.ul
             // Obtém o item selecionado no ComboBox
             string servicoSelecionado = comboServiço.SelectedItem?.ToString();
 
+
             // Verifica se há um item selecionado antes de chamar o método
             if (!string.IsNullOrEmpty(servicoSelecionado))
             {
-                Agendar agendar = new Agendar();
-                agendar.Exibir_Servicos(comboServiço);
+
+
+                comboServiço.Text = servicoSelecionado;
+
+
             }
 
             else
             {
-                Agendar agendar = new Agendar();
-                agendar.Exibir_Servicos(comboServiço);
+
+                MessageBox.Show("nao");
             }
+
         }
 
 
@@ -65,7 +73,7 @@ namespace LuMoura.ul
             DateTime dataSelecionada = monthCalendar1.SelectionStart; // Substitua 'monthCalendar1' pelo nome do seu controle MonthCalendar
 
             // Agora, você pode formatar a data em uma string com o formato desejado
-            //string dataFormatada = dataSelecionada.ToString("dd/MM/yyyy");
+            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd HH:mm:ss");
             //MessageBox.Show(dataFormatada);
 
 
@@ -74,13 +82,13 @@ namespace LuMoura.ul
 
 
             Agendar agendar = new Agendar();
-            agendar.agendar(dataSelecionada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text);
+            agendar.agendar(dataFormatada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text);
 
 
-            
 
 
-                        
+
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -96,9 +104,9 @@ namespace LuMoura.ul
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AreaCliente_Cadastro areaCliente_Cadastro = new AreaCliente_Cadastro();
+            ControleCadastroADM areaCliente_Cadastro = new ControleCadastroADM();
             areaCliente_Cadastro.Show();
-           
+
 
         }
 
@@ -135,14 +143,47 @@ namespace LuMoura.ul
             // Verifica se há um item selecionado antes de chamar o método
             if (!string.IsNullOrEmpty(servicoSelecionado))
             {
-                Agendar agendar = new Agendar();
-                agendar.Exibir_Servicos(comboServiço);
+                MessageBox.Show("nao");
+
             }
 
             else
             {
                 Agendar agendar = new Agendar();
                 agendar.Exibir_Servicos(comboServiço);
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int rowIndex = dataGridView1.SelectedRows[0].Index;
+                int idCliente = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["IdCliente"].Value);
+
+                using (SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente WHERE IdCliente = @IdCliente", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                textNome.Text = dr["Nome"].ToString();
+                                textTelefone.Text = dr["Telefone"].ToString();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Cliente não Encontrado!");
+                            }
+                        }
+                    }
+                }
             }
         }
     }
