@@ -28,211 +28,210 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.textNome = new System.Windows.Forms.TextBox();
-            this.textTelefone = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.BtnCadastar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboServiço = new System.Windows.Forms.ComboBox();
-            this.textDescricao = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(526, 291);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Agenda";
+            monthCalendar1 = new MonthCalendar();
+            textNome = new TextBox();
+            textTelefone = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            BtnCadastar = new Button();
+            dataGridView1 = new DataGridView();
+            comboServiço = new ComboBox();
+            textDescricao = new TextBox();
+            groupBox1 = new GroupBox();
+            button3 = new Button();
+            dataGridView2 = new DataGridView();
+            button2 = new Button();
+            button1 = new Button();
+            label5 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            SuspendLayout();
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(515, 315);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 10);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 1;
-            this.monthCalendar1.TodayDate = new System.DateTime(2023, 11, 8, 0, 0, 0, 0);
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            monthCalendar1.Location = new Point(259, 355);
+            monthCalendar1.Margin = new Padding(9, 9, 9, 10);
+            monthCalendar1.Name = "monthCalendar1";
+            monthCalendar1.TabIndex = 1;
+            monthCalendar1.TodayDate = new DateTime(2023, 11, 8, 0, 0, 0, 0);
+            monthCalendar1.DateChanged += monthCalendar1_DateChanged;
             // 
             // textNome
             // 
-            this.textNome.Location = new System.Drawing.Point(564, 29);
-            this.textNome.Name = "textNome";
-            this.textNome.Size = new System.Drawing.Size(405, 23);
-            this.textNome.TabIndex = 2;
-            this.textNome.TextChanged += new System.EventHandler(this.textNome_TextChanged);
+            textNome.Location = new Point(564, 29);
+            textNome.Name = "textNome";
+            textNome.Size = new Size(405, 23);
+            textNome.TabIndex = 2;
+            textNome.TextChanged += textNome_TextChanged;
             // 
             // textTelefone
             // 
-            this.textTelefone.Location = new System.Drawing.Point(564, 58);
-            this.textTelefone.Name = "textTelefone";
-            this.textTelefone.Size = new System.Drawing.Size(405, 23);
-            this.textTelefone.TabIndex = 3;
-            this.textTelefone.TextChanged += new System.EventHandler(this.textTelefone_TextChanged);
+            textTelefone.Location = new Point(564, 58);
+            textTelefone.Name = "textTelefone";
+            textTelefone.Size = new Size(405, 23);
+            textTelefone.TabIndex = 3;
+            textTelefone.TextChanged += textTelefone_TextChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(490, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Nome";
+            label2.AutoSize = true;
+            label2.Location = new Point(501, 37);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Nome";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(490, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Telefone";
+            label3.AutoSize = true;
+            label3.Location = new Point(497, 61);
+            label3.Name = "label3";
+            label3.Size = new Size(51, 15);
+            label3.TabIndex = 6;
+            label3.Text = "Telefone";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(490, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Serviço";
+            label4.AutoSize = true;
+            label4.Location = new Point(74, 299);
+            label4.Name = "label4";
+            label4.Size = new Size(45, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Serviço";
             // 
             // BtnCadastar
             // 
-            this.BtnCadastar.Location = new System.Drawing.Point(799, 547);
-            this.BtnCadastar.Name = "BtnCadastar";
-            this.BtnCadastar.Size = new System.Drawing.Size(170, 23);
-            this.BtnCadastar.TabIndex = 8;
-            this.BtnCadastar.Text = "Cadastar Horario";
-            this.BtnCadastar.UseVisualStyleBackColor = true;
-            this.BtnCadastar.Click += new System.EventHandler(this.BtnCadastar_Click);
+            BtnCadastar.Location = new Point(22, 538);
+            BtnCadastar.Name = "BtnCadastar";
+            BtnCadastar.Size = new Size(170, 23);
+            BtnCadastar.TabIndex = 8;
+            BtnCadastar.Text = "Cadastar Horario";
+            BtnCadastar.UseVisualStyleBackColor = true;
+            BtnCadastar.Click += BtnCadastar_Click;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(412, 162);
-            this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(6, 22);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(480, 137);
+            dataGridView1.TabIndex = 9;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // comboServiço
             // 
-            this.comboServiço.FormattingEnabled = true;
-            this.comboServiço.Location = new System.Drawing.Point(564, 90);
-            this.comboServiço.Name = "comboServiço";
-            this.comboServiço.Size = new System.Drawing.Size(405, 23);
-            this.comboServiço.TabIndex = 10;
-            this.comboServiço.SelectedIndexChanged += new System.EventHandler(this.comboServiço_SelectedIndexChanged);
+            comboServiço.FormattingEnabled = true;
+            comboServiço.Location = new Point(0, 317);
+            comboServiço.Name = "comboServiço";
+            comboServiço.Size = new Size(235, 23);
+            comboServiço.TabIndex = 10;
+            comboServiço.SelectedIndexChanged += comboServiço_SelectedIndexChanged;
             // 
             // textDescricao
             // 
-            this.textDescricao.Location = new System.Drawing.Point(564, 127);
-            this.textDescricao.Multiline = true;
-            this.textDescricao.Name = "textDescricao";
-            this.textDescricao.Size = new System.Drawing.Size(405, 72);
-            this.textDescricao.TabIndex = 11;
-            this.textDescricao.TextChanged += new System.EventHandler(this.textDescricao_TextChanged);
+            textDescricao.Location = new Point(564, 87);
+            textDescricao.Multiline = true;
+            textDescricao.Name = "textDescricao";
+            textDescricao.Size = new Size(405, 72);
+            textDescricao.TabIndex = 11;
+            textDescricao.TextChanged += textDescricao_TextChanged;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView2);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.monthCalendar1);
-            this.groupBox1.Controls.Add(this.textDescricao);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboServiço);
-            this.groupBox1.Controls.Add(this.textNome);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.textTelefone);
-            this.groupBox1.Controls.Add(this.BtnCadastar);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 31);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1000, 584);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            groupBox1.Controls.Add(button3);
+            groupBox1.Controls.Add(dataGridView2);
+            groupBox1.Controls.Add(button2);
+            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(monthCalendar1);
+            groupBox1.Controls.Add(textDescricao);
+            groupBox1.Controls.Add(comboServiço);
+            groupBox1.Controls.Add(textNome);
+            groupBox1.Controls.Add(dataGridView1);
+            groupBox1.Controls.Add(textTelefone);
+            groupBox1.Controls.Add(BtnCadastar);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Location = new Point(12, 31);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(1000, 570);
+            groupBox1.TabIndex = 12;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(171, 165);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 22;
+            button3.Text = "Preencher";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 315);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(418, 69);
-            this.dataGridView2.TabIndex = 21;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(0, 355);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowTemplate.Height = 25;
+            dataGridView2.Size = new Size(235, 162);
+            dataGridView2.TabIndex = 21;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(87, 190);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Atualizar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(90, 165);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 14;
+            button2.Text = "Atualizar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 190);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(9, 165);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 13;
+            button1.Text = "cadastrar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(490, 127);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 15);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Descrição";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            label5.AutoSize = true;
+            label5.Location = new Point(497, 87);
+            label5.Name = "label5";
+            label5.Size = new Size(58, 15);
+            label5.TabIndex = 12;
+            label5.Text = "Descrição";
+            label5.Click += label5_Click;
             // 
             // AgendarHorario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 613);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "AgendarHorario";
-            this.Text = "AgendarHorario";
-            this.Load += new System.EventHandler(this.AgendarHorario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1035, 614);
+            Controls.Add(groupBox1);
+            Name = "AgendarHorario";
+            Text = "AgendarHorario";
+            Load += AgendarHorario_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private Label label1;
         private TextBox textNome;
         private TextBox textTelefone;
         private Label label2;
@@ -249,5 +248,6 @@
         private Button button1;
         private DataGridView dataGridView2;
         public MonthCalendar monthCalendar1;
+        private Button button3;
     }
 }

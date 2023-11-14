@@ -20,13 +20,13 @@ namespace LuMoura.ul
 
         public void Atualizar(string Nome, string CPF, string Telefone, string Email)
         {
-            //SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
-            //conn.Open();
-
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand("Update Cliente set Nome = '" + Nome + " ', CPF = '" + CPF + "',Telefone = '" + Telefone + "', Email = '" + Email + "' where IdCliente = '" + TxtCodigo.Text + "'" , conn);
+            //SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //conn.Open();
+
+            SqlCommand cmd = new SqlCommand("Update Cliente set Nome = '" + Nome + " ', CPF = '" + CPF + "',Telefone = '" + Telefone + "', Email = '" + Email + "' where IdCliente = '" + TxtCodigo.Text + "'", conn);
 
             cmd.ExecuteNonQuery();
 
@@ -34,7 +34,7 @@ namespace LuMoura.ul
 
             MessageBox.Show("Atualizado");
 
-            TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = ""; 
+            TxtNome.Text = ""; TxtCPF.Text = ""; TxtTelefone.Text = ""; TxtEmail.Text = ""; TxtCodigo.Text = "";
         }
 
         private void BtCadastrar_Click(object sender, EventArgs e)
@@ -56,11 +56,11 @@ namespace LuMoura.ul
             //Buscar
 
 
-            //SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
-            //conn.Open();  
-
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
             conn.Open();
+
+            //SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //conn.Open();
 
             SqlCommand cmd = new SqlCommand("Select * from Cliente where idCliente= '" + TxtCodigo.Text + "'", conn);
 
@@ -90,6 +90,9 @@ namespace LuMoura.ul
         private void BtAtualizar_Click(object sender, EventArgs e)
         {
             Atualizar(TxtNome.Text, TxtCPF.Text, TxtTelefone.Text, TxtEmail.Text);
+
+            dataGridView1.Visible = false;
+            dataGridView1.Visible = true;
         }
 
         private void BtExcluir_Click(object sender, EventArgs e)
@@ -97,10 +100,10 @@ namespace LuMoura.ul
 
             int IdCliente = Convert.ToInt32(dataGridView1.CurrentRow.Cells["IdCliente"].Value);
 
-            //using (SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False"))
+            using (SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False"))
 
 
-            using (SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+            //using (SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
             {
                 conn.Open();
 
@@ -129,11 +132,11 @@ namespace LuMoura.ul
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            //SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
-            //conn.Open();
-
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Lu_Moura; Integrated Security = True; Connect Timeout = 30; Encrypt = False");
             conn.Open();
+
+            //SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //conn.Open();
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
 
