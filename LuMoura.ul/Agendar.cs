@@ -10,6 +10,73 @@ namespace LuMoura.ul
 {
     internal class Agendar
     {
+
+        public void NomeAndTempo(string servicoSelecionado, TextBox textPreco, TextBox textDuracao)
+        {
+            using (SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
+            {
+                conn.Open();
+
+                // Use parâmetros SQL para evitar problemas de SQL Injection
+                SqlCommand cmd = new SqlCommand("SELECT ValorServico, DuracaoEmHoras FROM Servicos WHERE NomeServico = @NomeServico", conn);
+                cmd.Parameters.AddWithValue("@NomeServico", servicoSelecionado);
+                SqlCommand cmd1 = new SqlCommand("SELECT ValorServico, DuracaoEmHoras FROM Servicos WHERE NomeServico = @NomeServico", conn);
+
+                using (SqlDataReader dr = cmd.ExecuteReader())
+                {
+                    if (dr.Read())
+                    {
+                        // Lê os valores do resultado da consulta e os exibe nos controles TextBox
+                        decimal preco = Convert.ToDecimal(dr["ValorServico"]);
+                        decimal duracao = Convert.ToDecimal(dr["DuracaoEmHoras"]);
+
+                        // Atualiza os controles de interface do usuário com as informações do serviço
+                        textPreco.Text = preco.ToString();
+                        textDuracao.Text = duracao.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Serviço não encontrado!");
+                    }
+                }
+            }
+        }
+    
+
+    public string Completar(DateTime dataSelecionada, DataGridView dataGridView, TextBox textHorario)
+        {
+            string dataFormatada = dataSelecionada.ToString("dd-MM-yyyy");
+
+            if (dataGridView.SelectedRows.Count > 0)
+            {
+                int rowIndex = dataGridView.SelectedRows[0].Index;
+                int HorarioID = Convert.ToInt32(dataGridView.Rows[rowIndex].Cells["HorarioID"].Value);
+
+                using (SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM Horarios WHERE HorarioID = @HorarioID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@HorarioID", HorarioID);
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                textHorario.Text = dr["Hora"].ToString();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Horário não encontrado!");
+                            }
+                        }
+                    }
+                }
+            }
+            return dataFormatada;
+        }
+
         public void exibirHora(DataGridView dataGridView2)
         {
             SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
@@ -20,7 +87,7 @@ namespace LuMoura.ul
 
 
 
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Horarios", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Horarios WHERE Disponivel = 1", conn);
 
             SqlDataReader dr = cmd.ExecuteReader();
             BindingSource bs = new BindingSource();
@@ -53,21 +120,74 @@ namespace LuMoura.ul
         }
 
 
-        public void agendar(string Dataa, string Nome, string Telefone, string Servico, string Descricao)
+        public void agendar(string Dataa, string Nome, string Telefone, string Servico, string Descricao, DataGridView dataGridView, string nomeServico)
         {
+            if (dataGridView.SelectedRows.Count > 0)
+            {
+                int rowIndex = dataGridView.SelectedRows[0].Index;
+                int HorarioID = Convert.ToInt32(dataGridView.Rows[rowIndex].Cells["HorarioID"].Value);
 
-            // usar no senac//
-            //SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                using (SqlConnection conn1 = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
+                {
+                    conn1.Open();
 
-            // Usar em casa//
-            SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
+                    // Consulta para obter informações do serviço
+                    using (SqlCommand cmd2 = new SqlCommand("SELECT ServicoID, ValorServico, DuracaoEmHoras FROM Servicos WHERE NomeServico = @NomeServico", conn1))
+                    {
+                        cmd2.Parameters.AddWithValue("@NomeServico", nomeServico);
 
-            conn.Open();
+                        using (SqlDataReader dr = cmd2.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                int servicoID = Convert.ToInt32(dr["ServicoID"]);
 
-            SqlCommand cmd = new SqlCommand("insert into Agendamentos values (2, 2,'" + Dataa + "','" + Nome+ "','"+Telefone+"','"+Servico+"','"+Descricao+"')", conn);
+                                using (SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
+                                {
+                                    conn.Open();
+                                    using (SqlTransaction transaction = conn.BeginTransaction())
+                                    {
+                                        try
+                                        {
+                                            // 1. Consulta para inserir no banco de dados
+                                            using (SqlCommand cmd = new SqlCommand("INSERT INTO Agendamentos VALUES (@ServicoID, @HorarioID, @Dataa, @Nome, @Telefone, @Servico, @Descricao)", conn, transaction))
+                                            {
+                                                cmd.Parameters.AddWithValue("@ServicoID", servicoID);
+                                                cmd.Parameters.AddWithValue("@HorarioID", HorarioID);
+                                                cmd.Parameters.AddWithValue("@Dataa", Dataa);
+                                                cmd.Parameters.AddWithValue("@Nome", Nome);
+                                                cmd.Parameters.AddWithValue("@Telefone", Telefone);
+                                                cmd.Parameters.AddWithValue("@Servico", Servico);
+                                                cmd.Parameters.AddWithValue("@Descricao", Descricao);
 
-            cmd.ExecuteNonQuery();
-                
+                                                cmd.ExecuteNonQuery();
+                                            }
+
+                                            // 2. Consulta para atualizar a disponibilidade na tabela de Horarios
+                                            using (SqlCommand cmdUpdate = new SqlCommand("UPDATE Horarios SET Disponivel = 0 WHERE HorarioID = @HorarioID", conn, transaction))
+                                            {
+                                                cmdUpdate.Parameters.AddWithValue("@HorarioID", HorarioID);
+                                                cmdUpdate.ExecuteNonQuery();
+                                            }
+
+                                            transaction.Commit(); // Confirma as alterações no banco de dados
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            transaction.Rollback(); // Desfaz as alterações se ocorrer um erro
+                                            MessageBox.Show("Erro ao cadastrar agendamento: " + ex.Message);
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Serviço não encontrado!");
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         public void Cadastrar(string Nome, string Telefone, string Email)

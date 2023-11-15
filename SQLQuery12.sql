@@ -106,12 +106,12 @@ CREATE TABLE Login
 	Foreign key (FKCliente) references Cliente(IdCliente)  
 );
 
-DECLARE @hora TIME = '09:00';
+DECLARE @hora TIME = '05:00';
 
 -- Deleta os registros existentes para reiniciar a tabela
 DELETE FROM Horarios;
 
-WHILE @hora <= '17:00'
+WHILE @hora <= '22:00'
 BEGIN
     INSERT INTO Horarios (Hora, Disponivel)
     VALUES (@hora, 1); -- Assumindo que todos os horários inicialmente estão disponíveis
@@ -125,3 +125,6 @@ END;
     Hora TIME NOT NULL,
     Disponivel BIT NOT NULL,
 );
+ UPDATE Horarios
+SET Disponivel = 1
+WHERE HorarioID = 9;
