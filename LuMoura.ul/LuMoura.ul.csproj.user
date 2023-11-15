@@ -7,9 +7,6 @@
     <Compile Update="AgendarHorario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AreaCliente_Cadastro.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="AtualizarServicos.cs">
       <SubType>Form</SubType>
     </Compile>

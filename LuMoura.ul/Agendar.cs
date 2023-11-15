@@ -141,6 +141,7 @@ namespace LuMoura.ul
                             if (dr.Read())
                             {
                                 int servicoID = Convert.ToInt32(dr["ServicoID"]);
+                                decimal duracaoServico = Convert.ToDecimal(dr["DuracaoEmHoras"]);
 
                                 using (SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
                                 {
@@ -150,24 +151,27 @@ namespace LuMoura.ul
                                         try
                                         {
                                             // 1. Consulta para inserir no banco de dados
-                                            using (SqlCommand cmd = new SqlCommand("INSERT INTO Agendamentos VALUES (@ServicoID, @HorarioID, @Dataa, @Nome, @Telefone, @Servico, @Descricao)", conn, transaction))
+                                            for (int i = 0; i < duracaoServico; i++)
                                             {
-                                                cmd.Parameters.AddWithValue("@ServicoID", servicoID);
-                                                cmd.Parameters.AddWithValue("@HorarioID", HorarioID);
-                                                cmd.Parameters.AddWithValue("@Dataa", Dataa);
-                                                cmd.Parameters.AddWithValue("@Nome", Nome);
-                                                cmd.Parameters.AddWithValue("@Telefone", Telefone);
-                                                cmd.Parameters.AddWithValue("@Servico", Servico);
-                                                cmd.Parameters.AddWithValue("@Descricao", Descricao);
+                                                using (SqlCommand cmd = new SqlCommand("INSERT INTO Agendamentos VALUES (@ServicoID, @HorarioID, @Dataa, @Nome, @Telefone, @Servico, @Descricao)", conn, transaction))
+                                                {
+                                                    cmd.Parameters.AddWithValue("@ServicoID", servicoID);
+                                                    cmd.Parameters.AddWithValue("@HorarioID", HorarioID + i); // Adiciona o índice para representar cada hora
+                                                    cmd.Parameters.AddWithValue("@Dataa", Dataa);
+                                                    cmd.Parameters.AddWithValue("@Nome", Nome);
+                                                    cmd.Parameters.AddWithValue("@Telefone", Telefone);
+                                                    cmd.Parameters.AddWithValue("@Servico", Servico);
+                                                    cmd.Parameters.AddWithValue("@Descricao", Descricao);
 
-                                                cmd.ExecuteNonQuery();
-                                            }
+                                                    cmd.ExecuteNonQuery();
+                                                }
 
-                                            // 2. Consulta para atualizar a disponibilidade na tabela de Horarios
-                                            using (SqlCommand cmdUpdate = new SqlCommand("UPDATE Horarios SET Disponivel = 0 WHERE HorarioID = @HorarioID", conn, transaction))
-                                            {
-                                                cmdUpdate.Parameters.AddWithValue("@HorarioID", HorarioID);
-                                                cmdUpdate.ExecuteNonQuery();
+                                                // 2. Consulta para atualizar a disponibilidade na tabela de Horarios
+                                                using (SqlCommand cmdUpdate = new SqlCommand("UPDATE Horarios SET Disponivel = 0 WHERE HorarioID = @HorarioID", conn, transaction))
+                                                {
+                                                    cmdUpdate.Parameters.AddWithValue("@HorarioID", HorarioID + i);
+                                                    cmdUpdate.ExecuteNonQuery();
+                                                }
                                             }
 
                                             transaction.Commit(); // Confirma as alterações no banco de dados
@@ -189,6 +193,7 @@ namespace LuMoura.ul
                 }
             }
         }
+    
 
         public void Cadastrar(string Nome, string Telefone, string Email)
         {

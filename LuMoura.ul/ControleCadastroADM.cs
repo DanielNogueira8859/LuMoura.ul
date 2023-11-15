@@ -145,5 +145,15 @@ namespace LuMoura.ul
             bs.DataSource = dr;
             dataGridView1.DataSource = bs;
         }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -115,7 +115,6 @@ C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\ru
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.csproj.AssemblyReference.cache
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ProjetoIntegrador.AdicionarServicos.resources
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AgendarHorario.resources
-C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AreaCliente_Cadastro.resources
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ProjetoIntegrador.AtualizarServicos.resources
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastroADM.resources
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Properties.Resources.resources

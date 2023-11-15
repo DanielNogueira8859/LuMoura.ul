@@ -212,7 +212,10 @@ namespace LuMoura.ul
             string dataFormatada = agendar.Completar(monthCalendar1.SelectionStart, dataGridView2, textHorario);
             textData.Text = dataFormatada;
 
-            
+            Agendar horario = new Agendar();
+            horario.exibirHora(dataGridView2);
+
+
 
 
 
