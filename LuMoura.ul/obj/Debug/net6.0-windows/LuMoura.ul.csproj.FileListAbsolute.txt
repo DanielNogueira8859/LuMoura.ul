@@ -11,7 +11,6 @@ C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-w
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.csproj.AssemblyReference.cache
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AgendarHorario.resources
-C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Form1.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.csproj.GenerateResource.cache
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AssemblyInfoInputs.cache
@@ -52,7 +51,6 @@ C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\r
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.csproj.CopyComplete
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.genruntimeconfig.cache
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ref\LuMoura.ul.dll
-C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AreaCliente_Cadastro.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Properties.Resources.resources
 C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ServicoFeito.resources
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ServicoFeito.resources
@@ -88,8 +86,6 @@ C:\Users\gustavo.sgmingas\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.
 C:\Users\gustavo.sgmingas\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ref\LuMoura.ul.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastro.resources
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.CotroleCadastro.resources
-C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastro.resources
-C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.CotroleCadastro.resources
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\Guna.UI2.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\System.Management.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
@@ -130,3 +126,9 @@ C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\re
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.pdb
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ref\LuMoura.ul.dll
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\Guna.UI2.dll
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ProjetoIntegrador.AdicionarServicos.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\ProjetoIntegrador.AtualizarServicos.resources
+C:\Users\daniel.nconceicao\source\repos\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.ControleCadastroADM.resources

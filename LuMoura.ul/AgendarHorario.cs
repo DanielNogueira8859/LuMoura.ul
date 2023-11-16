@@ -146,7 +146,7 @@ namespace LuMoura.ul
                 int rowIndex = dataGridView1.SelectedRows[0].Index;
                 int idCliente = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["IdCliente"].Value);
 
-                using (SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
+                using (SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
                 {
                     conn.Open();
 
@@ -219,6 +219,35 @@ namespace LuMoura.ul
 
 
 
+        }
+
+        private void BtnCadastar_Click_1(object sender, EventArgs e)
+        {
+            DateTime dataSelecionada = monthCalendar1.SelectionStart;
+            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd HH:mm:ss");
+
+            Agendar agendar = new Agendar();
+            agendar.agendar(dataFormatada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text, dataGridView2, comboServiço.Text);
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Agendar agendar = new Agendar();
+            string dataFormatada = agendar.Completar(monthCalendar1.SelectionStart, dataGridView2, textHorario);
+            textData.Text = dataFormatada;
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Agendar agendar = new Agendar();
+            agendar.Atualizar(dataGridView1);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ControleCadastroADM controleCadastroADM = new ControleCadastroADM();
+            controleCadastroADM.Show();
         }
     }
 }
