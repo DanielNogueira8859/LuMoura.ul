@@ -47,48 +47,28 @@ namespace LuMoura.ul
             // Obtém o item selecionado no ComboBox
             string servicoSelecionado = comboServiço.SelectedItem?.ToString();
 
-
             // Verifica se há um item selecionado antes de chamar o método
             if (!string.IsNullOrEmpty(servicoSelecionado))
             {
-
-
                 comboServiço.Text = servicoSelecionado;
 
-
+                Agendar agendar = new Agendar();
+                agendar.NomeAndTempo(servicoSelecionado, textPreco, textDuracao);
             }
-
             else
             {
-
-                MessageBox.Show("nao");
+                MessageBox.Show("Serviço não selecionado!");
             }
-
         }
 
 
         private void BtnCadastar_Click(object sender, EventArgs e)
         {
-
-            DateTime dataSelecionada = monthCalendar1.SelectionStart; // Substitua 'monthCalendar1' pelo nome do seu controle MonthCalendar
-
-            // Agora, você pode formatar a data em uma string com o formato desejado
+            DateTime dataSelecionada = monthCalendar1.SelectionStart;
             string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd HH:mm:ss");
-            //MessageBox.Show(dataFormatada);
-
-
-            //DateTime dataSelecionada = monthCalendar1.Value;
-            //string dataSelecionadaString = dataSelecionada.ToString("dd/MM/yyyy");
-
 
             Agendar agendar = new Agendar();
-            agendar.agendar(dataFormatada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text);
-
-
-
-
-
-
+            agendar.agendar(dataFormatada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text, dataGridView2, comboServiço.Text);
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -193,6 +173,51 @@ namespace LuMoura.ul
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textData_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textHorario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textDuracao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textPreco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Agendar agendar = new Agendar();
+            string dataFormatada = agendar.Completar(monthCalendar1.SelectionStart, dataGridView2, textHorario);
+            textData.Text = dataFormatada;
+
+            Agendar horario = new Agendar();
+            horario.exibirHora(dataGridView2);
+
+
+
+
 
         }
     }
