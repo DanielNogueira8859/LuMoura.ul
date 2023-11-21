@@ -75,6 +75,7 @@
             this.textNome.Name = "textNome";
             this.textNome.Size = new System.Drawing.Size(405, 23);
             this.textNome.TabIndex = 2;
+            this.textNome.TextChanged += new System.EventHandler(this.textNome_TextChanged);
             // 
             // textTelefone
             // 
@@ -82,6 +83,7 @@
             this.textTelefone.Name = "textTelefone";
             this.textTelefone.Size = new System.Drawing.Size(405, 23);
             this.textTelefone.TabIndex = 3;
+            this.textTelefone.TextChanged += new System.EventHandler(this.textTelefone_TextChanged);
             // 
             // label2
             // 
@@ -118,7 +120,7 @@
             this.BtnCadastar.TabIndex = 8;
             this.BtnCadastar.Text = "Cadastar Horario";
             this.BtnCadastar.UseVisualStyleBackColor = true;
-            this.BtnCadastar.Click += new System.EventHandler(this.BtnCadastar_Click_1);
+            this.BtnCadastar.Click += new System.EventHandler(this.BtnCadastar_Click);
             // 
             // dataGridView1
             // 
@@ -128,6 +130,7 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(480, 137);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // comboServiço
             // 
@@ -280,7 +283,7 @@
             this.button3.TabIndex = 22;
             this.button3.Text = "Preencher  Dados do Usuarios";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView2
             // 
@@ -299,7 +302,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Atualizar";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -309,7 +312,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "cadastrar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
