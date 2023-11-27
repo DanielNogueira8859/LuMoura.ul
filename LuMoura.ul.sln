@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{E2E084AE-0F7
 		LuMoura.ul\CadastroDAL.cs = LuMoura.ul\CadastroDAL.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLuMoura", "WebLuMoura\WebLuMoura.csproj", "{AF8FAEBE-3F4E-426F-9B7D-457699419DE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{62217747-AF4A-4A5D-A72A-44A6AF86C90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62217747-AF4A-4A5D-A72A-44A6AF86C90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62217747-AF4A-4A5D-A72A-44A6AF86C90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8FAEBE-3F4E-426F-9B7D-457699419DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8FAEBE-3F4E-426F-9B7D-457699419DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8FAEBE-3F4E-426F-9B7D-457699419DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8FAEBE-3F4E-426F-9B7D-457699419DE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
