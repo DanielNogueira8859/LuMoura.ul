@@ -27,7 +27,6 @@ namespace LuMoura.ul
         {
 
 
-
         }
 
         private void textNome_TextChanged(object sender, EventArgs e)
@@ -214,8 +213,6 @@ namespace LuMoura.ul
 
             Agendar horario = new Agendar();
             horario.exibirHora(dataGridView2);
-
-
 
 
 
