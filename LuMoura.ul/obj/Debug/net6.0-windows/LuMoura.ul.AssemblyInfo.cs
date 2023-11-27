@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LuMoura.ul")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6cf32d63dc96c155613b8967190077d93ac8a64")]
 [assembly: System.Reflection.AssemblyProductAttribute("LuMoura.ul")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LuMoura.ul")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -52,9 +52,25 @@
               "target": "Package",
               "version": "[0.0.3, )"
             },
+            "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.2, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.1, )"
             }
           },
           "imports": [

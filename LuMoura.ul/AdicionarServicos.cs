@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using LuMoura.ul;
 
 
 namespace ProjetoIntegrador
@@ -22,13 +23,22 @@ namespace ProjetoIntegrador
         private void button1_Click(object sender, EventArgs e)
         {
             DAL.ServicosDAL mensagem = new DAL.ServicosDAL();
-            mensagem.AdicionarServico(textBoxNome.Text, textBoxDes.Text, Convert.ToDecimal(textBoxValor.Text), Convert.ToInt32(textBoxTempo.Text)) ;
+            mensagem.AdicionarServico(textBoxNome.Text, textBoxDes.Text, Convert.ToDecimal(textBoxValor.Text), Convert.ToInt32(textBoxTempo.Text));
             this.Hide();
         }
 
         private void textBoxValor_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Menu form = new Menu();
+            form.Show();
+
+            //fecha a pagina
+            this.Hide();
         }
     }
 }

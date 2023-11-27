@@ -1,14 +1,15 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="LuMoura.ul.WebUI.Contact" %>
+﻿<%@ Page Title="Contacto" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="LuMoura.ul.WebUI.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <h2 id="title"><%: Title %>.</h2>
-        <h3>Your contact page.</h3>
+        <h3></h3>
         <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
-            <abbr title="Phone">P:</abbr>
-            425.555.0100
+            Rua Luiz Faccine, 132<br />
+            Centro, Guarulhos SP
+            CEP: 07110-000<br />
+            <abbr title="Phone"> Telefone: (11) 2187-3350 </abbr>
+            
         </address>
 
         <address>

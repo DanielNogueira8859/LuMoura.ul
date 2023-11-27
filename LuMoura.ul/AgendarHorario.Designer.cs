@@ -56,6 +56,7 @@
             button1 = new Button();
             label5 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            button7 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -154,6 +155,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.LavenderBlush;
+            groupBox1.Controls.Add(button7);
             groupBox1.Controls.Add(button6);
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label7);
@@ -336,6 +338,16 @@
             label5.Text = "Descrição";
             label5.Click += label5_Click;
             // 
+            // button7
+            // 
+            button7.Location = new Point(839, 391);
+            button7.Name = "button7";
+            button7.Size = new Size(75, 23);
+            button7.TabIndex = 34;
+            button7.Text = "Menu";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
             // AgendarHorario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -382,5 +394,6 @@
         private Label label7;
         private Label label6;
         private Button button6;
+        private Button button7;
     }
 }

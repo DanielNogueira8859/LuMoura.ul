@@ -220,5 +220,14 @@ namespace LuMoura.ul
 
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Menu form = new Menu();
+            form.Show();
+
+            //fecha a pagina
+            this.Hide();
+        }
     }
 }
