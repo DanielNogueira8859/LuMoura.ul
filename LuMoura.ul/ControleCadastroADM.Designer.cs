@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             groupBox1 = new GroupBox();
             BtExcluir = new Guna.UI2.WinForms.Guna2Button();
             BtAtualizar = new Guna.UI2.WinForms.Guna2Button();
@@ -81,7 +84,7 @@
             groupBox1.Controls.Add(TxtCPF);
             groupBox1.Location = new Point(4, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(841, 385);
+            groupBox1.Size = new Size(849, 385);
             groupBox1.TabIndex = 14;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter_1;
@@ -89,7 +92,7 @@
             // BtExcluir
             // 
             BtExcluir.BackColor = Color.Plum;
-            BtExcluir.CustomizableEdges = customizableEdges1;
+            BtExcluir.CustomizableEdges = customizableEdges10;
             BtExcluir.DisabledState.BorderColor = Color.DarkGray;
             BtExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
             BtExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -97,16 +100,17 @@
             BtExcluir.FillColor = Color.Plum;
             BtExcluir.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtExcluir.ForeColor = Color.White;
-            BtExcluir.Location = new Point(589, 144);
+            BtExcluir.Location = new Point(664, 144);
             BtExcluir.Name = "BtExcluir";
-            BtExcluir.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            BtExcluir.ShadowDecoration.CustomizableEdges = customizableEdges11;
             BtExcluir.Size = new Size(96, 23);
             BtExcluir.TabIndex = 34;
             BtExcluir.Text = "Excluir";
+            BtExcluir.Click += BtExcluir_Click_1;
             // 
             // BtAtualizar
             // 
-            BtAtualizar.CustomizableEdges = customizableEdges3;
+            BtAtualizar.CustomizableEdges = customizableEdges12;
             BtAtualizar.DisabledState.BorderColor = Color.DarkGray;
             BtAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -114,16 +118,17 @@
             BtAtualizar.FillColor = Color.Plum;
             BtAtualizar.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtAtualizar.ForeColor = Color.White;
-            BtAtualizar.Location = new Point(589, 87);
+            BtAtualizar.Location = new Point(664, 87);
             BtAtualizar.Name = "BtAtualizar";
-            BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges13;
             BtAtualizar.Size = new Size(96, 23);
             BtAtualizar.TabIndex = 33;
             BtAtualizar.Text = "Atualizar";
+            BtAtualizar.Click += BtAtualizar_Click_1;
             // 
             // BtBuscar
             // 
-            BtBuscar.CustomizableEdges = customizableEdges5;
+            BtBuscar.CustomizableEdges = customizableEdges14;
             BtBuscar.DisabledState.BorderColor = Color.DarkGray;
             BtBuscar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtBuscar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -131,16 +136,17 @@
             BtBuscar.FillColor = Color.Plum;
             BtBuscar.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtBuscar.ForeColor = Color.White;
-            BtBuscar.Location = new Point(487, 87);
+            BtBuscar.Location = new Point(562, 87);
             BtBuscar.Name = "BtBuscar";
-            BtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            BtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges15;
             BtBuscar.Size = new Size(96, 23);
             BtBuscar.TabIndex = 32;
             BtBuscar.Text = "Buscar";
+            BtBuscar.Click += BtBuscar_Click_1;
             // 
             // BtCadastrar
             // 
-            BtCadastrar.CustomizableEdges = customizableEdges7;
+            BtCadastrar.CustomizableEdges = customizableEdges16;
             BtCadastrar.DisabledState.BorderColor = Color.DarkGray;
             BtCadastrar.DisabledState.CustomBorderColor = Color.DarkGray;
             BtCadastrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -148,12 +154,13 @@
             BtCadastrar.FillColor = Color.Plum;
             BtCadastrar.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             BtCadastrar.ForeColor = Color.White;
-            BtCadastrar.Location = new Point(487, 144);
+            BtCadastrar.Location = new Point(562, 144);
             BtCadastrar.Name = "BtCadastrar";
-            BtCadastrar.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            BtCadastrar.ShadowDecoration.CustomizableEdges = customizableEdges17;
             BtCadastrar.Size = new Size(96, 23);
             BtCadastrar.TabIndex = 31;
             BtCadastrar.Text = "Cadastrar";
+            BtCadastrar.Click += BtCadastrar_Click_1;
             // 
             // BtMenu
             // 
@@ -166,17 +173,18 @@
             BtMenu.ForeColor = Color.White;
             BtMenu.Location = new Point(762, 21);
             BtMenu.Name = "BtMenu";
-            BtMenu.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            BtMenu.ShadowDecoration.CustomizableEdges = customizableEdges18;
             BtMenu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             BtMenu.Size = new Size(74, 43);
             BtMenu.TabIndex = 30;
             BtMenu.Text = "Menu";
+            BtMenu.Click += BtMenu_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(407, 92);
+            label4.Location = new Point(482, 92);
             label4.Name = "label4";
             label4.Size = new Size(24, 15);
             label4.TabIndex = 28;
@@ -184,7 +192,7 @@
             // 
             // TxtCodigo
             // 
-            TxtCodigo.Location = new Point(434, 87);
+            TxtCodigo.Location = new Point(509, 87);
             TxtCodigo.Name = "TxtCodigo";
             TxtCodigo.Size = new Size(47, 23);
             TxtCodigo.TabIndex = 27;
@@ -193,9 +201,33 @@
             // 
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.BackgroundColor = Color.FromArgb(255, 192, 255);
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(28, 195);
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = SystemColors.Window;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridView1.Location = new Point(20, 191);
             dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = SystemColors.Control;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(808, 173);
             dataGridView1.TabIndex = 26;
@@ -204,7 +236,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(8, 147);
+            label3.Location = new Point(83, 147);
             label3.Name = "label3";
             label3.Size = new Size(64, 20);
             label3.TabIndex = 21;
@@ -212,7 +244,7 @@
             // 
             // TxtEmail
             // 
-            TxtEmail.Location = new Point(77, 148);
+            TxtEmail.Location = new Point(152, 148);
             TxtEmail.Name = "TxtEmail";
             TxtEmail.Size = new Size(324, 23);
             TxtEmail.TabIndex = 22;
@@ -220,7 +252,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(238, 120);
+            label7.Location = new Point(313, 120);
             label7.Name = "label7";
             label7.Size = new Size(57, 15);
             label7.TabIndex = 11;
@@ -228,7 +260,7 @@
             // 
             // TxtTelefone
             // 
-            TxtTelefone.Location = new Point(301, 117);
+            TxtTelefone.Location = new Point(376, 117);
             TxtTelefone.Name = "TxtTelefone";
             TxtTelefone.Size = new Size(100, 23);
             TxtTelefone.TabIndex = 12;
@@ -249,7 +281,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(8, 88);
+            label1.Location = new Point(83, 88);
             label1.Name = "label1";
             label1.Size = new Size(60, 20);
             label1.TabIndex = 0;
@@ -257,7 +289,7 @@
             // 
             // TxtNome
             // 
-            TxtNome.Location = new Point(77, 88);
+            TxtNome.Location = new Point(152, 88);
             TxtNome.Name = "TxtNome";
             TxtNome.Size = new Size(324, 23);
             TxtNome.TabIndex = 1;
@@ -266,7 +298,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(20, 116);
+            label2.Location = new Point(95, 116);
             label2.Name = "label2";
             label2.Size = new Size(47, 20);
             label2.TabIndex = 2;
@@ -274,7 +306,7 @@
             // 
             // TxtCPF
             // 
-            TxtCPF.Location = new Point(77, 117);
+            TxtCPF.Location = new Point(152, 117);
             TxtCPF.Name = "TxtCPF";
             TxtCPF.Size = new Size(100, 23);
             TxtCPF.TabIndex = 3;
