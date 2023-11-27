@@ -227,7 +227,7 @@
           }
         }
       },
-      "Guna.UI2.WinForms/2.0.4.5": {
+      "Guna.UI2.WinForms/2.0.4.6": {
         "type": "package",
         "dependencies": {
           "System.Management": "6.0.0"
@@ -1797,16 +1797,16 @@
         "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map"
       ]
     },
-    "Guna.UI2.WinForms/2.0.4.5": {
-      "sha512": "lR50db4NzBC0QLAr27q9nrpYsIfWKjOgGnROrPi8AxbwLFE3nTup6ZOpVE/vbrr86eLV//8ys9sIW7j0ix2h+Q==",
+    "Guna.UI2.WinForms/2.0.4.6": {
+      "sha512": "NYzSJp7e47Cz3NgGCHvzadash8ycmxxUnpLg4Rr/MSYG9WDw0HOoTI4SkbDW+HbACrf6tsWYCuzWkgvjuM/O6w==",
       "type": "package",
-      "path": "guna.ui2.winforms/2.0.4.5",
+      "path": "guna.ui2.winforms/2.0.4.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "guna.ui2.winforms.2.0.4.5.nupkg.sha512",
+        "guna.ui2.winforms.2.0.4.6.nupkg.sha512",
         "guna.ui2.winforms.nuspec",
         "icon.png",
         "lib/net40/Guna.UI2.dll",
@@ -5670,7 +5670,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Guna.UI2.WinForms >= 2.0.4.5",
+      "Guna.UI2.WinForms >= 2.0.4.6",
       "Hora >= 0.0.3",
       "Microsoft.CodeDom.Providers.DotNetCompilerPlatform >= 4.1.0",
       "Newtonsoft.Json >= 13.0.3",
@@ -5680,23 +5680,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gustavo.sgmingas\\.nuget\\packages\\": {},
+    "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
+      "projectUniqueName": "C:\\Users\\daniel.nconceicao\\source\\repos\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
       "projectName": "LuMoura.ul",
-      "projectPath": "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
-      "packagesPath": "C:\\Users\\gustavo.sgmingas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\obj\\",
+      "projectPath": "C:\\Users\\daniel.nconceicao\\source\\repos\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
+      "packagesPath": "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daniel.nconceicao\\source\\repos\\LuMoura.ul\\LuMoura.ul\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gustavo.sgmingas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\daniel.nconceicao\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5725,7 +5725,7 @@
         "dependencies": {
           "Guna.UI2.WinForms": {
             "target": "Package",
-            "version": "[2.0.4.5, )"
+            "version": "[2.0.4.6, )"
           },
           "Hora": {
             "target": "Package",
