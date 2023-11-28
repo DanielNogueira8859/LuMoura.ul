@@ -41,9 +41,9 @@ namespace LuMoura.ul
                 }
             }
         }
-    
 
-    public string Completar(DateTime dataSelecionada, DataGridView dataGridView, TextBox textHorario)
+
+        public string Completar(DateTime dataSelecionada, DataGridView dataGridView, TextBox textHorario)
         {
             string dataFormatada = dataSelecionada.ToString("dd-MM-yyyy");
 
@@ -82,9 +82,7 @@ namespace LuMoura.ul
             SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
 
 
-
             conn.Open();
-
 
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM Horarios WHERE Disponivel = 1", conn);
@@ -95,11 +93,10 @@ namespace LuMoura.ul
             dataGridView2.DataSource = bs;
 
         }
-        public void Exibir_Servicos( ComboBox item)
+        public void Exibir_Servicos(ComboBox item)
         {
             // usar no senac//
             //SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            
             // Usar em casa//
             SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
 
@@ -113,7 +110,6 @@ namespace LuMoura.ul
             item.Items.Clear();
             while (reader.Read())
             {
-                
                 item.Items.Add(reader["NomeServico"].ToString());
 
             }
@@ -193,7 +189,7 @@ namespace LuMoura.ul
                 }
             }
         }
-    
+
 
         public void Cadastrar(string Nome, string Telefone, string Email)
         {
@@ -206,22 +202,18 @@ namespace LuMoura.ul
             SqlCommand cmd = new SqlCommand("insert into Agendamento values ( '" + Nome + "', '" + Telefone + "','" + Email + "', GETDATE())", conn);
 
         }
-        
         public void Atualizar(DataGridView dataGridView1)
         {
             // usar no senac//
             //SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False");
-            
-            
+
             // Usar em casa//
             SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
 
 
-
             conn.Open();
 
-            
-            
+
             SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente", conn);
 
             SqlDataReader dr = cmd.ExecuteReader();
@@ -229,7 +221,7 @@ namespace LuMoura.ul
             bs.DataSource = dr;
             dataGridView1.DataSource = bs;
 
-            
+
         }
         public void itemSelecionado(DataGridViewRow dataGridView1)
         {
@@ -237,7 +229,6 @@ namespace LuMoura.ul
             {
 
                 SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
-
 
 
                 conn.Open();
@@ -256,7 +247,6 @@ namespace LuMoura.ul
             //usar senac//
 
             //SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False");
-            
             // Usar em casa//
             SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
 
@@ -265,7 +255,7 @@ namespace LuMoura.ul
 
             //SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente WHERE Nome LIKE '%" + nome + "%'", conn);
 
-            
+
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente WHERE Nome LIKE '%" + nome + "%'", conn);
 

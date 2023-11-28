@@ -103,4 +103,17 @@ BEGIN
 END;
 select * from Horarios
 
+Alex
 
+select * from Usuario
+
+drop table Usuario
+
+CREATE TABLE Usuario (
+    UsuarioID INT IDENTITY(1, 1) PRIMARY KEY,
+    Nome VARCHAR(255) NOT NULL,
+    SobreNome Varchar (200) not null,
+    Endereco Varchar (200) not null,
+    Senha Varchar (200) not null,
+    Confirmar Varchar (200) not null,
+);
