@@ -44,5 +44,10 @@ namespace LuMoura.ul
             //fecha a pagina
             this.Hide();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

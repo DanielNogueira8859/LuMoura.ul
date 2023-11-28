@@ -226,5 +226,15 @@ namespace LuMoura.ul
             //fecha a pagina
             this.Hide();
         }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCadastar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

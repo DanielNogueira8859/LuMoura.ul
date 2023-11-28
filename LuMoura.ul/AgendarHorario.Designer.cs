@@ -28,341 +28,322 @@
         /// </summary>
         private void InitializeComponent()
         {
-            monthCalendar1 = new MonthCalendar();
-            textNome = new TextBox();
-            textTelefone = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            BtnCadastar = new Button();
-            dataGridView1 = new DataGridView();
-            comboServiço = new ComboBox();
-            textDescricao = new TextBox();
-            groupBox1 = new GroupBox();
-            button6 = new Button();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label1 = new Label();
-            textDuracao = new TextBox();
-            textPreco = new TextBox();
-            button5 = new Button();
-            button4 = new Button();
-            textHorario = new TextBox();
-            textData = new TextBox();
-            button3 = new Button();
-            dataGridView2 = new DataGridView();
-            button2 = new Button();
-            button1 = new Button();
-            label5 = new Label();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            button7 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            SuspendLayout();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.textNome = new System.Windows.Forms.TextBox();
+            this.textTelefone = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnCadastar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboServiço = new System.Windows.Forms.ComboBox();
+            this.textDescricao = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textDuracao = new System.Windows.Forms.TextBox();
+            this.textPreco = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textHorario = new System.Windows.Forms.TextBox();
+            this.textData = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.SuspendLayout();
             // 
             // monthCalendar1
             // 
-            monthCalendar1.Location = new Point(271, 204);
-            monthCalendar1.Margin = new Padding(9, 9, 9, 10);
-            monthCalendar1.Name = "monthCalendar1";
-            monthCalendar1.TabIndex = 1;
-            monthCalendar1.TodayDate = new DateTime(2023, 11, 8, 0, 0, 0, 0);
-            monthCalendar1.DateChanged += monthCalendar1_DateChanged;
+            this.monthCalendar1.Location = new System.Drawing.Point(271, 204);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 10);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 1;
+            this.monthCalendar1.TodayDate = new System.DateTime(2023, 11, 8, 0, 0, 0, 0);
             // 
             // textNome
             // 
-            textNome.Location = new Point(564, 29);
-            textNome.Name = "textNome";
-            textNome.Size = new Size(405, 23);
-            textNome.TabIndex = 2;
-            textNome.TextChanged += textNome_TextChanged;
+            this.textNome.Location = new System.Drawing.Point(564, 29);
+            this.textNome.Name = "textNome";
+            this.textNome.Size = new System.Drawing.Size(405, 23);
+            this.textNome.TabIndex = 2;
             // 
             // textTelefone
             // 
-            textTelefone.Location = new Point(564, 58);
-            textTelefone.Name = "textTelefone";
-            textTelefone.Size = new Size(405, 23);
-            textTelefone.TabIndex = 3;
-            textTelefone.TextChanged += textTelefone_TextChanged;
+            this.textTelefone.Location = new System.Drawing.Point(564, 58);
+            this.textTelefone.Name = "textTelefone";
+            this.textTelefone.Size = new System.Drawing.Size(405, 23);
+            this.textTelefone.TabIndex = 3;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(501, 37);
-            label2.Name = "label2";
-            label2.Size = new Size(40, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Nome";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(501, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Nome";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(497, 61);
-            label3.Name = "label3";
-            label3.Size = new Size(51, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Telefone";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(497, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Telefone";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(507, 204);
-            label4.Name = "label4";
-            label4.Size = new Size(45, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Serviço";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(507, 204);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Serviço";
             // 
             // BtnCadastar
             // 
-            BtnCadastar.Location = new Point(794, 343);
-            BtnCadastar.Name = "BtnCadastar";
-            BtnCadastar.Size = new Size(175, 23);
-            BtnCadastar.TabIndex = 8;
-            BtnCadastar.Text = "Cadastar Horario";
-            BtnCadastar.UseVisualStyleBackColor = true;
-            BtnCadastar.Click += BtnCadastar_Click;
+            this.BtnCadastar.Location = new System.Drawing.Point(794, 343);
+            this.BtnCadastar.Name = "BtnCadastar";
+            this.BtnCadastar.Size = new System.Drawing.Size(175, 23);
+            this.BtnCadastar.TabIndex = 8;
+            this.BtnCadastar.Text = "Cadastar Horario";
+            this.BtnCadastar.UseVisualStyleBackColor = true;
+            this.BtnCadastar.Click += new System.EventHandler(this.BtnCadastar_Click_1);
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 22);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(480, 137);
-            dataGridView1.TabIndex = 9;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(480, 137);
+            this.dataGridView1.TabIndex = 9;
             // 
             // comboServiço
             // 
-            comboServiço.FormattingEnabled = true;
-            comboServiço.Location = new Point(564, 204);
-            comboServiço.Name = "comboServiço";
-            comboServiço.Size = new Size(405, 23);
-            comboServiço.TabIndex = 10;
-            comboServiço.SelectedIndexChanged += comboServiço_SelectedIndexChanged;
+            this.comboServiço.FormattingEnabled = true;
+            this.comboServiço.Location = new System.Drawing.Point(564, 204);
+            this.comboServiço.Name = "comboServiço";
+            this.comboServiço.Size = new System.Drawing.Size(405, 23);
+            this.comboServiço.TabIndex = 10;
             // 
             // textDescricao
             // 
-            textDescricao.Location = new Point(564, 87);
-            textDescricao.Multiline = true;
-            textDescricao.Name = "textDescricao";
-            textDescricao.Size = new Size(405, 72);
-            textDescricao.TabIndex = 11;
-            textDescricao.TextChanged += textDescricao_TextChanged;
+            this.textDescricao.Location = new System.Drawing.Point(564, 87);
+            this.textDescricao.Multiline = true;
+            this.textDescricao.Name = "textDescricao";
+            this.textDescricao.Size = new System.Drawing.Size(405, 72);
+            this.textDescricao.TabIndex = 11;
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.LavenderBlush;
-            groupBox1.Controls.Add(button7);
-            groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(textDuracao);
-            groupBox1.Controls.Add(textPreco);
-            groupBox1.Controls.Add(button5);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(textHorario);
-            groupBox1.Controls.Add(textData);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(dataGridView2);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(monthCalendar1);
-            groupBox1.Controls.Add(textDescricao);
-            groupBox1.Controls.Add(comboServiço);
-            groupBox1.Controls.Add(textNome);
-            groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Controls.Add(textTelefone);
-            groupBox1.Controls.Add(BtnCadastar);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Location = new Point(12, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1000, 420);
-            groupBox1.TabIndex = 12;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(564, 314);
-            button6.Name = "button6";
-            button6.Size = new Size(72, 23);
-            button6.TabIndex = 33;
-            button6.Text = "Completar";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(750, 271);
-            label8.Name = "label8";
-            label8.Size = new Size(37, 15);
-            label8.TabIndex = 32;
-            label8.Text = "Preço";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(507, 271);
-            label7.Name = "label7";
-            label7.Size = new Size(51, 15);
-            label7.TabIndex = 31;
-            label7.Text = "Duração";
-            label7.Click += label7_Click;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(741, 242);
-            label6.Name = "label6";
-            label6.Size = new Size(47, 15);
-            label6.TabIndex = 30;
-            label6.Text = "Horario";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(507, 242);
-            label1.Name = "label1";
-            label1.Size = new Size(34, 15);
-            label1.TabIndex = 29;
-            label1.Text = "Data ";
-            label1.Click += label1_Click;
-            // 
-            // textDuracao
-            // 
-            textDuracao.Location = new Point(564, 271);
-            textDuracao.Name = "textDuracao";
-            textDuracao.Size = new Size(149, 23);
-            textDuracao.TabIndex = 28;
-            textDuracao.TextChanged += textDuracao_TextChanged;
-            // 
-            // textPreco
-            // 
-            textPreco.Location = new Point(794, 271);
-            textPreco.Name = "textPreco";
-            textPreco.Size = new Size(175, 23);
-            textPreco.TabIndex = 27;
-            textPreco.TextChanged += textPreco_TextChanged;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(564, 343);
-            button5.Name = "button5";
-            button5.Size = new Size(72, 23);
-            button5.TabIndex = 26;
-            button5.Text = "Excluir";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(648, 343);
-            button4.Name = "button4";
-            button4.Size = new Size(65, 23);
-            button4.TabIndex = 25;
-            button4.Text = "Atualizar";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // textHorario
-            // 
-            textHorario.Location = new Point(794, 242);
-            textHorario.Name = "textHorario";
-            textHorario.Size = new Size(175, 23);
-            textHorario.TabIndex = 24;
-            textHorario.TextChanged += textHorario_TextChanged;
-            // 
-            // textData
-            // 
-            textData.Location = new Point(564, 242);
-            textData.Name = "textData";
-            textData.Size = new Size(149, 23);
-            textData.TabIndex = 23;
-            textData.TextChanged += textData_TextChanged;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(271, 165);
-            button3.Name = "button3";
-            button3.Size = new Size(215, 23);
-            button3.TabIndex = 22;
-            button3.Text = "Preencher  Dados do Usuarios";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(12, 204);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(235, 162);
-            dataGridView2.TabIndex = 21;
-            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(124, 165);
-            button2.Name = "button2";
-            button2.Size = new Size(123, 23);
-            button2.TabIndex = 14;
-            button2.Text = "Atualizar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(9, 165);
-            button1.Name = "button1";
-            button1.Size = new Size(109, 23);
-            button1.TabIndex = 13;
-            button1.Text = "cadastrar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(497, 87);
-            label5.Name = "label5";
-            label5.Size = new Size(58, 15);
-            label5.TabIndex = 12;
-            label5.Text = "Descrição";
-            label5.Click += label5_Click;
+            this.groupBox1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textDuracao);
+            this.groupBox1.Controls.Add(this.textPreco);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.textHorario);
+            this.groupBox1.Controls.Add(this.textData);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.dataGridView2);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.monthCalendar1);
+            this.groupBox1.Controls.Add(this.textDescricao);
+            this.groupBox1.Controls.Add(this.comboServiço);
+            this.groupBox1.Controls.Add(this.textNome);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.textTelefone);
+            this.groupBox1.Controls.Add(this.BtnCadastar);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1000, 420);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // button7
             // 
-            button7.Location = new Point(839, 391);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 23);
-            button7.TabIndex = 34;
-            button7.Text = "Menu";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
+            this.button7.Location = new System.Drawing.Point(839, 391);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 34;
+            this.button7.Text = "Menu";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(564, 314);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(72, 23);
+            this.button6.TabIndex = 33;
+            this.button6.Text = "Completar";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(750, 271);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 15);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Preço";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(507, 271);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 15);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Duração";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(741, 242);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 15);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Horario";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(507, 242);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 15);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Data ";
+            // 
+            // textDuracao
+            // 
+            this.textDuracao.Location = new System.Drawing.Point(564, 271);
+            this.textDuracao.Name = "textDuracao";
+            this.textDuracao.Size = new System.Drawing.Size(149, 23);
+            this.textDuracao.TabIndex = 28;
+            // 
+            // textPreco
+            // 
+            this.textPreco.Location = new System.Drawing.Point(794, 271);
+            this.textPreco.Name = "textPreco";
+            this.textPreco.Size = new System.Drawing.Size(175, 23);
+            this.textPreco.TabIndex = 27;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(564, 343);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(72, 23);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Excluir";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(648, 343);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(65, 23);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Atualizar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // textHorario
+            // 
+            this.textHorario.Location = new System.Drawing.Point(794, 242);
+            this.textHorario.Name = "textHorario";
+            this.textHorario.Size = new System.Drawing.Size(175, 23);
+            this.textHorario.TabIndex = 24;
+            // 
+            // textData
+            // 
+            this.textData.Location = new System.Drawing.Point(564, 242);
+            this.textData.Name = "textData";
+            this.textData.Size = new System.Drawing.Size(149, 23);
+            this.textData.TabIndex = 23;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(271, 165);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(215, 23);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Preencher  Dados do Usuarios";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 204);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.Size = new System.Drawing.Size(235, 162);
+            this.dataGridView2.TabIndex = 21;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(124, 165);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Atualizar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(9, 165);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "cadastrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(497, 87);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 15);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Descrição";
             // 
             // AgendarHorario
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LavenderBlush;
-            ClientSize = new Size(1035, 444);
-            Controls.Add(groupBox1);
-            Name = "AgendarHorario";
-            Text = "AgendarHorario";
-            Load += AgendarHorario_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
+            this.ClientSize = new System.Drawing.Size(1035, 444);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "AgendarHorario";
+            this.Text = "AgendarHorario";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
