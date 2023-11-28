@@ -39,6 +39,7 @@
             comboServiço = new ComboBox();
             textDescricao = new TextBox();
             groupBox1 = new GroupBox();
+            button7 = new Button();
             button6 = new Button();
             label8 = new Label();
             label7 = new Label();
@@ -56,7 +57,6 @@
             button1 = new Button();
             label5 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            button7 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -190,6 +190,16 @@
             groupBox1.Text = "groupBox1";
             groupBox1.Enter += groupBox1_Enter;
             // 
+            // button7
+            // 
+            button7.Location = new Point(839, 391);
+            button7.Name = "button7";
+            button7.Size = new Size(75, 23);
+            button7.TabIndex = 34;
+            button7.Text = "Menu";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
             // button6
             // 
             button6.Location = new Point(564, 314);
@@ -262,6 +272,7 @@
             button5.TabIndex = 26;
             button5.Text = "Excluir";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -271,6 +282,7 @@
             button4.TabIndex = 25;
             button4.Text = "Atualizar";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // textHorario
             // 
@@ -337,16 +349,6 @@
             label5.TabIndex = 12;
             label5.Text = "Descrição";
             label5.Click += label5_Click;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(839, 391);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 23);
-            button7.TabIndex = 34;
-            button7.Text = "Menu";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
             // 
             // AgendarHorario
             // 
