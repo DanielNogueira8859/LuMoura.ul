@@ -103,6 +103,8 @@ BEGIN
 END;
 select * from Horarios
 
+Alex
+
 select * from Usuario
 
 drop table Usuario
