@@ -228,12 +228,12 @@ namespace LuMoura.ul
             this.Hide();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button7_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void BtnCadastar_Click_1(object sender, EventArgs e)
         {
 
         }
