@@ -53,16 +53,21 @@ namespace LuMoura.ul
                 int rowIndex = dataGridView.SelectedRows[0].Index;
                 int HorarioID = Convert.ToInt32(dataGridView.Rows[rowIndex].Cells["HorarioID"].Value);
 
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    conn.Open();
+                SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;");
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM Horarios WHERE HorarioID = @HorarioID", conn))
-                    {
-                        cmd.Parameters.AddWithValue("@HorarioID", HorarioID);
+                conn.Open();
 
-                        using (SqlDataReader dr = cmd.ExecuteReader())
-                        {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Horarios WHERE HorarioID = @HorarioID", conn);
+                cmd.Parameters.AddWithValue("@HorarioID", HorarioID);
+
+
+               
+               
+                cmd.ExecuteNonQuery();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+               
+                       
                             if (dr.Read())
                             {
                                 textHorario.Text = dr["Hora"].ToString();
@@ -71,16 +76,16 @@ namespace LuMoura.ul
                             {
                                 MessageBox.Show("Horário não encontrado!");
                             }
-                        }
-                    }
-                }
+                       
+                    
+                
             }
             return dataFormatada;
         }
 
         public void exibirHora(DataGridView dataGridView2)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;");
 
 
             conn.Open();
@@ -196,7 +201,7 @@ namespace LuMoura.ul
         {
             // usar no senac//
             SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-
+            conn.Open();
             // Usar em casa//
             //SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;");
 

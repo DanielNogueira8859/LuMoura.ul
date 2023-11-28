@@ -51,7 +51,6 @@ C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\roslyn\vbc.rsp
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\roslyn\VBCSCompiler.exe
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\Antlr3.Runtime.dll
-C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\AspNet.ScriptManager.jQuery.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\Microsoft.AspNet.FriendlyUrls.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -75,3 +74,4 @@ C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\obj\Debug\WebLuMoura.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\obj\Debug\WebLuMoura.pdb
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\System.Data.SqlClient.dll
 C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\System.Data.SqlClient.xml
+C:\Users\alexa\Documents\GitHub\LuMoura.ul\WebLuMoura\bin\Guna.UI2.dll

@@ -13,6 +13,7 @@ namespace LuMoura.ul
 {
     public partial class AgendarHorario : Form
     {
+        private readonly string connectionString ="Data Source=FAC0539709W10-1;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public AgendarHorario()
         {
             InitializeComponent();
@@ -145,28 +146,28 @@ namespace LuMoura.ul
                 int rowIndex = dataGridView1.SelectedRows[0].Index;
                 int idCliente = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["IdCliente"].Value);
 
-                using (SqlConnection conn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=LuMoura.DB;Integrated Security=True;"))
-                {
-                    conn.Open();
+                SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;");
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente WHERE IdCliente = @IdCliente", conn))
-                    {
-                        cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                conn.Open();
 
-                        using (SqlDataReader dr = cmd.ExecuteReader())
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente WHERE IdCliente = @IdCliente", conn);
+                cmd.Parameters.AddWithValue("@IdCliente", idCliente);
+                cmd.ExecuteNonQuery();
+                
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
                         {
-                            if (dr.Read())
-                            {
-                                textNome.Text = dr["Nome"].ToString();
-                                textTelefone.Text = dr["Telefone"].ToString();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Cliente não Encontrado!");
-                            }
+                            textNome.Text = dr["Nome"].ToString();
+                            textTelefone.Text = dr["Telefone"].ToString();
                         }
-                    }
-                }
+                        else
+                        {
+                            MessageBox.Show("Cliente não Encontrado!");
+                        }
+
+                    
+                
             }
         }
 
