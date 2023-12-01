@@ -20,6 +20,26 @@ namespace LuMoura.ul
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
             AdicionarServicos form = new AdicionarServicos();
             form.Show();
 
@@ -27,7 +47,7 @@ namespace LuMoura.ul
             this.Hide();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click_1(object sender, EventArgs e)
         {
             ControleCadastroADM form = new ControleCadastroADM();
             form.Show();
@@ -36,18 +56,13 @@ namespace LuMoura.ul
             this.Hide();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2Button3_Click_1(object sender, EventArgs e)
         {
             AgendarHorario form = new AgendarHorario();
             form.Show();
 
             //fecha a pagina
             this.Hide();
-        }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

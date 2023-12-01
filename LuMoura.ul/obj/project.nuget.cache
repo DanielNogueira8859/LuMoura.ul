@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gdYOKW0u7BLMvVGpblg8qyW6psikF+MYM3NbAw8YdLA0kwcm4AId8y5ruap4rRfWkJxFBmJ3YKWtwFtZT/P4pw==",
+  "dgSpecHash": "7JN7byd4ksA0FBjX7hqMkB9gm/Mbth5ca3BkMTkEUYHIrlbnWGr1WiSdJxVGxH0yUK6mcgrOnPk2veI8HUUrEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\daniel.nconceicao\\source\\repos\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
+  "projectFilePath": "C:\\Users\\daniel.nconceicao\\source\\repos\\Projeto\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512",
     "C:\\Users\\daniel.nconceicao\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
