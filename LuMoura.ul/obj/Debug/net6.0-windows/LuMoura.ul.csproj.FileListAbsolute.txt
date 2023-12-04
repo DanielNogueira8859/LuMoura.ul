@@ -365,3 +365,4 @@ C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\Mi
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Menu.resources
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AtualizarAgendamento.resources
+C:\Users\daniel.nconceicao\source\repos\Projeto\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AtualizarAgendamento.resources

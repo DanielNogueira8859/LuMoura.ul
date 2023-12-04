@@ -23,10 +23,10 @@ namespace LuMoura.ul.DAL
 
 
         //usar em casa
-        private const string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LuMoura.DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+        //private const string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LuMoura.DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
 
         // usar senac
-        //private const string connectionString = "Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;";
+        private const string connectionString = "Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;";
 
         public void NomeAndTempo(string servicoSelecionado, TextBox textPreco, TextBox textDuracao)
         {
