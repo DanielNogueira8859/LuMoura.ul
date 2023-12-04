@@ -326,3 +326,4 @@ C:\Users\gustavo.sgmingas\source\repos\Nova pasta (3)\LuMoura.ul\LuMoura.ul\bin\
 C:\Users\gustavo.sgmingas\source\repos\Nova pasta (3)\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\ServiceStack.Text.dll
 C:\Users\gustavo.sgmingas\source\repos\Nova pasta (3)\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\DevExpress.Data.v23.1.dll
 C:\Users\gustavo.sgmingas\source\repos\Nova pasta (3)\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\Hourglass.dll
+C:\Users\gustavo.sgmingas\source\repos\Nova pasta (3)\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AtualizarAgendamento.resources

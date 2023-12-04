@@ -353,6 +353,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="LoginGS.aspx" />
     <Content Include="LuMoura.Master" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -444,6 +445,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGS.aspx.cs">
+      <DependentUpon>LoginGS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginGS.aspx.designer.cs">
+      <DependentUpon>LoginGS.aspx</DependentUpon>
     </Compile>
     <Compile Include="LuMoura.Master.cs">
       <DependentUpon>LuMoura.Master</DependentUpon>
