@@ -128,3 +128,42 @@ END;
  UPDATE Horarios
 SET Disponivel = 1
 WHERE HorarioID = 9;
+
+drop table Horarios
+
+drop table Agendamentos
+
+CREATE TABLE Horarios (
+   HorarioID INT IDENTITY(1, 1) PRIMARY KEY,
+   DataAgenda DATE NOT NULL,
+   Hora TIME NOT NULL,
+   Disponivel BIT NOT NULL
+);
+
+
+
+
+
+---- Desativa a verificação de chaves estrangeiras temporariamente
+--EXEC sp_MSForEachTable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL';
+
+---- Exclui os registros da tabela Agendamentos
+--DELETE FROM Agendamentos;
+
+---- Ativa a verificação de chaves estrangeiras
+--EXEC sp_MSForEachTable 'ALTER TABLE ? CHECK CONSTRAINT ALL';
+
+---- Exclui os registros da tabela Horarios
+
+
+drop table Horarios
+DECLARE @dataAgenda DATE = '2023-11-09';
+DECLARE @hora TIME = '05:00';
+WHILE @hora <= '22:00'
+BEGIN
+   INSERT INTO Horarios (DataAgenda, Hora, Disponivel)
+   VALUES (@dataAgenda, @hora, 1);
+   SET @hora = DATEADD(HOUR, 1, @hora);
+END;
+
+select *from Horarios

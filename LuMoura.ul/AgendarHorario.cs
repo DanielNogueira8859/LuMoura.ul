@@ -8,11 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LuMoura.ul.DAL;
 
 namespace LuMoura.ul
 {
     public partial class AgendarHorario : Form
     {
+        //usar em casa
+        private const string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LuMoura.DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+
+        // usar senac
+        //private const string connectionString = "Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;";
+
+        private Dictionary<string, List<string>> horariosDisponiveis = new Dictionary<string, List<string>>();
+
+
+
         public AgendarHorario()
         {
             InitializeComponent();
@@ -31,7 +42,7 @@ namespace LuMoura.ul
 
         private void textNome_TextChanged(object sender, EventArgs e)
         {
-            Agendar horario = new Agendar();
+            AgendamentoService horario = new AgendamentoService();
             horario.Exibir(dataGridView1, textNome.Text);
 
         }
@@ -51,7 +62,7 @@ namespace LuMoura.ul
             {
                 comboServiço.Text = servicoSelecionado;
 
-                Agendar agendar = new Agendar();
+                AgendamentoService agendar = new AgendamentoService();
                 agendar.NomeAndTempo(servicoSelecionado, textPreco, textDuracao);
             }
             else
@@ -64,9 +75,9 @@ namespace LuMoura.ul
         private void BtnCadastar_Click(object sender, EventArgs e)
         {
             DateTime dataSelecionada = monthCalendar1.SelectionStart;
-            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd HH:mm:ss");
+            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd HH:mm:s");
 
-            Agendar agendar = new Agendar();
+            AgendamentoService agendar = new AgendamentoService();
             agendar.agendar(dataFormatada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text, dataGridView2, comboServiço.Text);
         }
 
@@ -111,15 +122,19 @@ namespace LuMoura.ul
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Agendar agendar = new Agendar();
+            AgendamentoService agendar = new AgendamentoService();
             agendar.Atualizar(dataGridView1);
         }
 
         private void AgendarHorario_Load(object sender, EventArgs e)
         {
+            DateTime dataSelecionada = monthCalendar1.SelectionStart;
+            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd");
+            AgendamentoService horario = new AgendamentoService();
+            horario.exibirHora(dataGridView2, dataFormatada);
 
-            Agendar horario = new Agendar();
-            horario.exibirHora(dataGridView2);
+            // Certifique-se de inicializar horariosDisponiveis
+            horariosDisponiveis = new Dictionary<string, List<string>>();
 
             string servicoSelecionado = comboServiço.SelectedItem?.ToString();
 
@@ -127,14 +142,11 @@ namespace LuMoura.ul
             if (!string.IsNullOrEmpty(servicoSelecionado))
             {
                 MessageBox.Show("nao");
-
             }
-
             else
             {
-                Agendar agendar = new Agendar();
+                AgendamentoService agendar = new AgendamentoService();
                 agendar.Exibir_Servicos(comboServiço);
-
             }
         }
 
@@ -145,7 +157,7 @@ namespace LuMoura.ul
                 int rowIndex = dataGridView1.SelectedRows[0].Index;
                 int idCliente = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["IdCliente"].Value);
 
-                using (SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LuMoura.DBB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
 
@@ -207,12 +219,14 @@ namespace LuMoura.ul
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Agendar agendar = new Agendar();
+
+
+            AgendamentoService agendar = new AgendamentoService();
             string dataFormatada = agendar.Completar(monthCalendar1.SelectionStart, dataGridView2, textHorario);
             textData.Text = dataFormatada;
 
-            Agendar horario = new Agendar();
-            horario.exibirHora(dataGridView2);
+            AgendamentoService horario = new AgendamentoService();
+            horario.exibirHora(dataGridView2, dataFormatada);
 
 
 
@@ -229,14 +243,30 @@ namespace LuMoura.ul
 
         private void BtnCadastar_Click_1(object sender, EventArgs e)
         {
-            DateTime dataSelecionada = monthCalendar1.SelectionStart;
-            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd HH:mm:ss");
 
-            Agendar agendar = new Agendar();
-            agendar.agendar(dataFormatada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text, dataGridView2, comboServiço.Text);
 
-            MessageBox.Show("Horario agendado");
+            try
+            {
+                int coluna = dataGridView2.SelectedRows.Count;
+                DateTime dataSelecionada = monthCalendar1.SelectionStart;
+                string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd");
+
+                AgendamentoService agendar = new AgendamentoService();
+                agendar.agendar(dataFormatada, textNome.Text, textTelefone.Text, comboServiço.Text, textDescricao.Text, dataGridView2, comboServiço.Text);
+
+                MessageBox.Show("Horário agendado com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao agendar horário: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            DateTime dataSelecionada1 = monthCalendar1.SelectionStart;
+            string dataFormatada1 = dataSelecionada1.ToString("yyyy-MM-dd");
+            AgendamentoService horario = new AgendamentoService();
+            horario.exibirHora(dataGridView2, dataFormatada1);
         }
+
 
         private void button7_Click_1(object sender, EventArgs e)
         {
@@ -249,17 +279,21 @@ namespace LuMoura.ul
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            AtualizarAgendamento atualizarAgendamento = new AtualizarAgendamento();
+            atualizarAgendamento.Show();
+            
         }
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            Agendar agendar = new Agendar();
+            DateTime dataSelecionada1 = monthCalendar1.SelectionStart;
+            string dataFormatada1 = dataSelecionada1.ToString("yyyy-MM-dd");
+
+            AgendamentoService agendar = new AgendamentoService();
             string dataFormatada = agendar.Completar(monthCalendar1.SelectionStart, dataGridView2, textHorario);
             textData.Text = dataFormatada;
 
-            Agendar horario = new Agendar();
-            horario.exibirHora(dataGridView2);
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -269,7 +303,7 @@ namespace LuMoura.ul
 
         private void textNome_TextChanged_1(object sender, EventArgs e)
         {
-            Agendar horario = new Agendar();
+            AgendamentoService horario = new AgendamentoService();
             horario.Exibir(dataGridView1, textNome.Text);
         }
 
@@ -293,7 +327,7 @@ namespace LuMoura.ul
             {
                 comboServiço.Text = servicoSelecionado;
 
-                Agendar agendar = new Agendar();
+                AgendamentoService agendar = new AgendamentoService();
                 agendar.NomeAndTempo(servicoSelecionado, textPreco, textDuracao);
             }
             else
@@ -330,7 +364,7 @@ namespace LuMoura.ul
                 int rowIndex = dataGridView1.SelectedRows[0].Index;
                 int idCliente = Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells["IdCliente"].Value);
 
-                using (SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LuMoura.DBB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
 
@@ -364,7 +398,7 @@ namespace LuMoura.ul
         private void button2_Click_1(object sender, EventArgs e)
         {
 
-            Agendar agendar = new Agendar();
+            AgendamentoService agendar = new AgendamentoService();
             agendar.Atualizar(dataGridView1);
 
         }
@@ -387,8 +421,14 @@ namespace LuMoura.ul
 
         private void AgendarHorario_Load_1(object sender, EventArgs e)
         {
-            Agendar horario = new Agendar();
-            horario.exibirHora(dataGridView2);
+
+            DateTime dataSelecionada = monthCalendar1.SelectionStart;
+            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd");
+            AgendamentoService horario = new AgendamentoService();
+            horario.exibirHora(dataGridView2, dataFormatada);
+
+
+
 
             string servicoSelecionado = comboServiço.SelectedItem?.ToString();
 
@@ -401,10 +441,31 @@ namespace LuMoura.ul
 
             else
             {
-                Agendar agendar = new Agendar();
+                AgendamentoService agendar = new AgendamentoService();
                 agendar.Exibir_Servicos(comboServiço);
 
             }
         }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e)
+        {
+            DateTime dataSelecionada = monthCalendar1.SelectionStart;
+            string dataFormatada = dataSelecionada.ToString("yyyy-MM-dd");
+            AgendamentoService horario = new AgendamentoService();
+            horario.exibirHora(dataGridView2, dataFormatada);
+
+        }
+
+
     }
 }

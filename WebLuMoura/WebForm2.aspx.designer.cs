@@ -11,16 +11,7 @@ namespace WebLuMoura
 {
 
 
-    public partial class WebForm1
+    public partial class WebForm2
     {
-
-        /// <summary>
-        /// Controle HyperLink1.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }
