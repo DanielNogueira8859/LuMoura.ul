@@ -44,7 +44,6 @@ namespace ProjetoIntegrador
 
         private void button2_Click(object sender, EventArgs e)
         {
-            BotaoBuscar();  
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -59,8 +58,19 @@ namespace ProjetoIntegrador
 
         private void Atualizar_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void BtBuscar_Click(object sender, EventArgs e)
+        {
+            BotaoBuscar();
+
+        }
+
+        private void BtAtualizar_Click(object sender, EventArgs e)
+        {
             DAL.ServicosDAL mensagem = new DAL.ServicosDAL();
-            mensagem.Atualizar( textBoxNome.Text, textBoxDes.Text, Convert.ToDecimal(textBoxValor.Text), Convert.ToInt32(textBoxTempo.Text), Convert.ToInt32(textBoxID.Text));
+            mensagem.Atualizar(textBoxNome2.Text, textBoxDes1.Text, Convert.ToDecimal(textBoxValor1.Text), Convert.ToInt32(textBoxTempo1.Text), Convert.ToInt32(textBoxID1.Text));
             this.Hide();
         }
     }
