@@ -20,15 +20,18 @@
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
+                </div>
                 
+
+                    <%--<asp:HyperLink NavigateUrl="~/WebForm1.aspx?id10" ID="HyperLink1" runat"server"></asp:HyperLink>--%>
+      
 
                 
  
 
 
             </asp:ContentPlaceHolder>
-        </div>
+        
         
     </form>
   
