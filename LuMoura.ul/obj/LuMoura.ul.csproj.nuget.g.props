@@ -370,5 +370,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\daniel.nconceicao\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\4.1.0</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
     <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\daniel.nconceicao\.nuget\packages\jquery\3.7.1</PkgjQuery>
+    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\daniel.nconceicao\.nuget\packages\devexpress.data\23.1.6</PkgDevExpress_Data>
   </PropertyGroup>
 </Project>
