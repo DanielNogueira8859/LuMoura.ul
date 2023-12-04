@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtAtualizar = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxTempo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,16 +42,16 @@
             this.textBoxDes = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.BtMenu = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.BtAtualizar = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(88, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 15);
+            this.label1.Size = new System.Drawing.Size(36, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome:";
             // 
@@ -72,12 +73,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Adicionar Serviços";
             // 
+            // BtAtualizar
+            // 
+            this.BtAtualizar.CustomizableEdges = customizableEdges1;
+            this.BtAtualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtAtualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtAtualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtAtualizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtAtualizar.FillColor = System.Drawing.Color.Plum;
+            this.BtAtualizar.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtAtualizar.ForeColor = System.Drawing.Color.White;
+            this.BtAtualizar.Location = new System.Drawing.Point(169, 328);
+            this.BtAtualizar.Name = "BtAtualizar";
+            this.BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.BtAtualizar.Size = new System.Drawing.Size(96, 28);
+            this.BtAtualizar.TabIndex = 35;
+            this.BtAtualizar.Text = "Adicionar";
+            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(23, 290);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 15);
+            this.label4.Size = new System.Drawing.Size(98, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "Tempo de duração:";
             // 
@@ -91,18 +111,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(70, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 15);
+            this.label3.Size = new System.Drawing.Size(55, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Descrição:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(95, 210);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 15);
+            this.label2.Size = new System.Drawing.Size(35, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Valor:";
             // 
@@ -145,24 +167,6 @@
             this.BtMenu.TabIndex = 31;
             this.BtMenu.Text = "Menu";
             this.BtMenu.Click += new System.EventHandler(this.BtMenu_Click);
-            // 
-            // BtAtualizar
-            // 
-            this.BtAtualizar.CustomizableEdges = customizableEdges1;
-            this.BtAtualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtAtualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtAtualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtAtualizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtAtualizar.FillColor = System.Drawing.Color.Plum;
-            this.BtAtualizar.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtAtualizar.ForeColor = System.Drawing.Color.White;
-            this.BtAtualizar.Location = new System.Drawing.Point(169, 328);
-            this.BtAtualizar.Name = "BtAtualizar";
-            this.BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.BtAtualizar.Size = new System.Drawing.Size(96, 28);
-            this.BtAtualizar.TabIndex = 35;
-            this.BtAtualizar.Text = "Adicionar";
-            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click);
             // 
             // AdicionarServicos
             // 
