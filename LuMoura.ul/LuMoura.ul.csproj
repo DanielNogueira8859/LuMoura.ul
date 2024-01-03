@@ -10,8 +10,11 @@
 
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.3.2" />
+    <PackageReference Include="DevExpress.Data" Version="23.1.6" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
     <PackageReference Include="Hora" Version="0.0.3" />
+    <PackageReference Include="Hourglass" Version="1.0.2" />
+    <PackageReference Include="Jenga.NET" Version="4.0.0" />
     <PackageReference Include="jQuery" Version="3.7.1" />
     <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="4.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

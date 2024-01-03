@@ -12,6 +12,11 @@ namespace WebLuMoura
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string idQVeioDaUrl = Request.QueryString["id"].ToString();
+
+            LblId.Text = idQVeioDaUrl;
+
+
 
         }
 
@@ -46,4 +51,4 @@ namespace WebLuMoura
             //Server.Transfer("https://google.com"); utilizado mais para WebForm
         }
     }
-    }
+  }

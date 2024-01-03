@@ -73,7 +73,7 @@ namespace LuMoura.ul
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-            DateTime selectedDate = monthCalendar1.SelectionStart;
+            DateTime selectedDate = monthCalendar1.SelectionStart.Date;
 
             try
             {
@@ -81,41 +81,37 @@ namespace LuMoura.ul
                 {
                     conn.Open();
 
-                    // Modifique a consulta SQL para incluir o filtro por data
                     string sql = @"SELECT
-                                        Agendamentos.AgendamentoID,
-                                        Agendamentos.DataAgendamento,
-                                        Agendamentos.NomeCliente,
-                                        Agendamentos.Telefone,
-                                        Agendamentos.Servico,
-                                        Agendamentos.Descricao,
-                                        Horarios.Hora AS HorarioAgendamento,
-                                        Servicos.NomeServico,
-                                        Servicos.DescricaoServico,
-                                        Servicos.ValorServico,
-                                        Servicos.DuracaoEmHoras
-                                    FROM
-                                        Agendamentos
-                                    JOIN
-                                        Horarios ON Agendamentos.FK_HorarioID = Horarios.HorarioID
-                                    JOIN
-                                        Servicos ON Agendamentos.FK_ServicoID = Servicos.ServicoID
-                                    WHERE
-                                        Agendamentos.DataAgendamento = @SelectedDate";
+                                Agendamentos.AgendamentoID,
+                                Agendamentos.DataAgendamento,
+                                Agendamentos.NomeCliente,
+                                Agendamentos.Telefone,
+                                Agendamentos.Servico,
+                                Agendamentos.Descricao,
+                                Horarios.Hora AS HorarioAgendamento,
+                                Servicos.NomeServico,
+                                Servicos.DescricaoServico,
+                                Servicos.ValorServico,
+                                Servicos.DuracaoEmHoras
+                            FROM
+                                Agendamentos
+                            JOIN
+                                Horarios ON Agendamentos.FK_HorarioID = Horarios.HorarioID
+                            JOIN
+                                Servicos ON Agendamentos.FK_ServicoID = Servicos.ServicoID
+                            WHERE
+                                Agendamentos.DataAgendamento >= @SelectedDateStart
+                                AND Agendamentos.DataAgendamento < @SelectedDateEnd";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
-                        // Adicione o parâmetro para a data selecionada
-                        cmd.Parameters.AddWithValue("@SelectedDate", selectedDate);
+                        cmd.Parameters.AddWithValue("@SelectedDateStart", selectedDate);
+                        cmd.Parameters.AddWithValue("@SelectedDateEnd", selectedDate.AddDays(1));
 
                         using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                         {
                             DataTable dt = new DataTable();
-
-                            // Preencha o DataTable com os resultados do INNER JOIN e filtro por data
                             da.Fill(dt);
-
-                            // Atribua o DataTable ao DataSource do DataGridView
                             GridCliente.DataSource = dt;
                         }
                     }
@@ -150,6 +146,21 @@ namespace LuMoura.ul
             {
                 MessageBox.Show("Erro ao calcular a soma: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void bunifuAppBar1_IconClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     

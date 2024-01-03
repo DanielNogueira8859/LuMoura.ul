@@ -39,6 +39,12 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    ID pego da outra pagina:
+    __________________________________________________
+    <asp:Label Text="" ID="LblId" runat="server" />
+    __________________________________________________
+
     <asp:ScriptManager runat="server"></asp:ScriptManager>
 
     <div class="container-fluid p-5 bg-primary text-white text-center">

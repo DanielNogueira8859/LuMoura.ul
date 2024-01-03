@@ -22,9 +22,7 @@ namespace ProjetoIntegrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DAL.ServicosDAL mensagem = new DAL.ServicosDAL();
-            mensagem.AdicionarServico(textBoxNome.Text, textBoxDes.Text, Convert.ToDecimal(textBoxValor.Text), Convert.ToInt32(textBoxTempo.Text));
-            this.Hide();
+           
         }
 
         private void textBoxValor_TextChanged(object sender, EventArgs e)
@@ -34,11 +32,38 @@ namespace ProjetoIntegrador
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void BtMenu_Click(object sender, EventArgs e)
+        {
             Menu form = new Menu();
             form.Show();
 
             //fecha a pagina
             this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtAtualizar_Click(object sender, EventArgs e)
+        {
+            DAL.ServicosDAL mensagem = new DAL.ServicosDAL();
+            mensagem.AdicionarServico(textBoxNome.Text, textBoxDes.Text, Convert.ToDecimal(textBoxValor.Text), Convert.ToInt32(textBoxTempo.Text));
+            this.Hide();
+        }
+
+        private void textBoxNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
