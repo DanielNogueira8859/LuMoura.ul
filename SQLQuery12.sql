@@ -1,9 +1,9 @@
-﻿CREATE TABLE Servicos (
-    ServicoID INT IDENTITY(1, 1) PRIMARY KEY,
+﻿CREATE TABLE Servicos(
+    ServicoID INT IDENTITY(1,1) PRIMARY KEY,
     NomeServico VARCHAR(255) NOT NULL,
-    DescricaoServico Varchar (200) not null,
-    ValorServico Decimal (10,2) not null,
-    DuracaoEmHoras DECIMAL(4, 2) NOT NULL
+    DescricaoServico VARCHAR(200) NOT NULL,
+    ValorServico DECIMAL(10,2) NOT NULL,
+    DuracaoEmHoras DECIMAL(4,2) NOT NULL
 );
 SELECT
     Agendamentos.AgendamentoID,
@@ -74,6 +74,8 @@ CREATE TABLE Cliente (
     Email          VARCHAR(50) NOT NULL,
     DataCadastro   DATETIME DEFAULT (getdate()) NOT NULL
 );
+ALTER TABLE Cliente
+ALTER COLUMN Telefone VARCHAR(20);
 select * from Cliente
 --clientes falsos---------------------------------------------------------------------------------------------------
 INSERT INTO Cliente (Nome, CPF, Telefone, Email) VALUES ('João Silva', '123.456.789-01', '(11) 98765-4321', 'joao.silva@email.com');

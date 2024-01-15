@@ -31,157 +31,157 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtAtualizar = new Guna.UI2.WinForms.Guna2Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxTempo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxValor = new System.Windows.Forms.TextBox();
-            this.textBoxDes = new System.Windows.Forms.TextBox();
-            this.textBoxNome = new System.Windows.Forms.TextBox();
-            this.BtMenu = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            groupBox1 = new GroupBox();
+            BtAtualizar = new Guna.UI2.WinForms.Guna2Button();
+            label4 = new Label();
+            textBoxTempo = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            textBoxValor = new TextBox();
+            textBoxDes = new TextBox();
+            textBoxNome = new TextBox();
+            BtMenu = new Guna.UI2.WinForms.Guna2CircleButton();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(88, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(88, 74);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Nome:";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.BtAtualizar);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBoxTempo);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBoxValor);
-            this.groupBox1.Controls.Add(this.textBoxDes);
-            this.groupBox1.Controls.Add(this.textBoxNome);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(127, 33);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(423, 384);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Adicionar Serviços";
+            groupBox1.Controls.Add(BtAtualizar);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(textBoxTempo);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(textBoxValor);
+            groupBox1.Controls.Add(textBoxDes);
+            groupBox1.Controls.Add(textBoxNome);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(127, 33);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(423, 384);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Adicionar Serviços";
             // 
             // BtAtualizar
             // 
-            this.BtAtualizar.CustomizableEdges = customizableEdges1;
-            this.BtAtualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtAtualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtAtualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtAtualizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtAtualizar.FillColor = System.Drawing.Color.Plum;
-            this.BtAtualizar.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtAtualizar.ForeColor = System.Drawing.Color.White;
-            this.BtAtualizar.Location = new System.Drawing.Point(169, 328);
-            this.BtAtualizar.Name = "BtAtualizar";
-            this.BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.BtAtualizar.Size = new System.Drawing.Size(96, 28);
-            this.BtAtualizar.TabIndex = 35;
-            this.BtAtualizar.Text = "Adicionar";
-            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click);
+            BtAtualizar.CustomizableEdges = customizableEdges1;
+            BtAtualizar.DisabledState.BorderColor = Color.DarkGray;
+            BtAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtAtualizar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtAtualizar.FillColor = Color.Plum;
+            BtAtualizar.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtAtualizar.ForeColor = Color.White;
+            BtAtualizar.Location = new Point(169, 328);
+            BtAtualizar.Name = "BtAtualizar";
+            BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            BtAtualizar.Size = new Size(96, 28);
+            BtAtualizar.TabIndex = 35;
+            BtAtualizar.Text = "Adicionar";
+            BtAtualizar.Click += BtAtualizar_Click;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(23, 290);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Tempo de duração:";
+            label4.AutoSize = true;
+            label4.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(23, 290);
+            label4.Name = "label4";
+            label4.Size = new Size(98, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Tempo de duração:";
             // 
             // textBoxTempo
             // 
-            this.textBoxTempo.Location = new System.Drawing.Point(165, 282);
-            this.textBoxTempo.Name = "textBoxTempo";
-            this.textBoxTempo.Size = new System.Drawing.Size(100, 23);
-            this.textBoxTempo.TabIndex = 6;
+            textBoxTempo.Location = new Point(165, 282);
+            textBoxTempo.Name = "textBoxTempo";
+            textBoxTempo.Size = new Size(100, 23);
+            textBoxTempo.TabIndex = 6;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(70, 151);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Descrição:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(70, 151);
+            label3.Name = "label3";
+            label3.Size = new Size(55, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Descrição:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bernard MT Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(95, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Valor:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(95, 210);
+            label2.Name = "label2";
+            label2.Size = new Size(35, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Valor:";
             // 
             // textBoxValor
             // 
-            this.textBoxValor.Location = new System.Drawing.Point(165, 210);
-            this.textBoxValor.Name = "textBoxValor";
-            this.textBoxValor.Size = new System.Drawing.Size(100, 23);
-            this.textBoxValor.TabIndex = 2;
+            textBoxValor.Location = new Point(165, 210);
+            textBoxValor.Name = "textBoxValor";
+            textBoxValor.Size = new Size(100, 23);
+            textBoxValor.TabIndex = 2;
             // 
             // textBoxDes
             // 
-            this.textBoxDes.Location = new System.Drawing.Point(165, 143);
-            this.textBoxDes.Name = "textBoxDes";
-            this.textBoxDes.Size = new System.Drawing.Size(100, 23);
-            this.textBoxDes.TabIndex = 1;
+            textBoxDes.Location = new Point(165, 143);
+            textBoxDes.Name = "textBoxDes";
+            textBoxDes.Size = new Size(100, 23);
+            textBoxDes.TabIndex = 1;
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(165, 66);
-            this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(100, 23);
-            this.textBoxNome.TabIndex = 0;
-            this.textBoxNome.TextChanged += new System.EventHandler(this.textBoxNome_TextChanged);
+            textBoxNome.Location = new Point(165, 66);
+            textBoxNome.Name = "textBoxNome";
+            textBoxNome.Size = new Size(100, 23);
+            textBoxNome.TabIndex = 0;
+            textBoxNome.TextChanged += textBoxNome_TextChanged;
             // 
             // BtMenu
             // 
-            this.BtMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtMenu.FillColor = System.Drawing.Color.Plum;
-            this.BtMenu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtMenu.ForeColor = System.Drawing.Color.White;
-            this.BtMenu.Location = new System.Drawing.Point(613, 65);
-            this.BtMenu.Name = "BtMenu";
-            this.BtMenu.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            this.BtMenu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.BtMenu.Size = new System.Drawing.Size(74, 43);
-            this.BtMenu.TabIndex = 31;
-            this.BtMenu.Text = "Menu";
-            this.BtMenu.Click += new System.EventHandler(this.BtMenu_Click);
+            BtMenu.DisabledState.BorderColor = Color.DarkGray;
+            BtMenu.DisabledState.CustomBorderColor = Color.DarkGray;
+            BtMenu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            BtMenu.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            BtMenu.FillColor = Color.Plum;
+            BtMenu.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtMenu.ForeColor = Color.White;
+            BtMenu.Location = new Point(613, 65);
+            BtMenu.Name = "BtMenu";
+            BtMenu.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            BtMenu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            BtMenu.Size = new Size(74, 43);
+            BtMenu.TabIndex = 31;
+            BtMenu.Text = "Menu";
+            BtMenu.Click += BtMenu_Click;
             // 
             // AdicionarServicos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BtMenu);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "AdicionarServicos";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LavenderBlush;
+            ClientSize = new Size(800, 450);
+            Controls.Add(BtMenu);
+            Controls.Add(groupBox1);
+            Name = "AdicionarServicos";
+            Text = "Form1";
+            Load += AdicionarServicos_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

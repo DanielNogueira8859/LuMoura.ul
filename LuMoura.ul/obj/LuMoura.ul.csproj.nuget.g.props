@@ -5,12 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\daniel.nconceicao\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\User\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.1.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\daniel.nconceicao\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\User\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
@@ -368,8 +368,11 @@
     </Content>
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\daniel.nconceicao\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\4.1.0</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
-    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\daniel.nconceicao\.nuget\packages\jquery\3.7.1</PkgjQuery>
-    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\daniel.nconceicao\.nuget\packages\devexpress.data\23.1.6</PkgDevExpress_Data>
+    <PkgSyncfusion_Shared_Base Condition=" '$(PkgSyncfusion_Shared_Base)' == '' ">C:\Users\User\.nuget\packages\syncfusion.shared.base\24.1.44</PkgSyncfusion_Shared_Base>
+    <PkgSyncfusion_Core_WinForms Condition=" '$(PkgSyncfusion_Core_WinForms)' == '' ">C:\Users\User\.nuget\packages\syncfusion.core.winforms\24.1.44</PkgSyncfusion_Core_WinForms>
+    <PkgSyncfusion_SfInput_WinForms Condition=" '$(PkgSyncfusion_SfInput_WinForms)' == '' ">C:\Users\User\.nuget\packages\syncfusion.sfinput.winforms\24.1.44</PkgSyncfusion_SfInput_WinForms>
+    <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\User\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\4.1.0</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\User\.nuget\packages\jquery\3.7.1</PkgjQuery>
+    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\User\.nuget\packages\devexpress.data\23.2.3</PkgDevExpress_Data>
   </PropertyGroup>
 </Project>

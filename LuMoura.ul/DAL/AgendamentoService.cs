@@ -7,9 +7,36 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
 using System.Transactions;
+using Guna.UI2.WinForms;
+using System.Globalization;
+using System.Collections.Generic;
+using Guna.UI2.WinForms;
 
 namespace LuMoura.ul.DAL
 {
+
+    public static class ListaGlobal
+    {
+        public static List<Guna2Button> Botoes { get; private set; } = new List<Guna2Button>();
+        public static Dictionary<Guna2Button, Rectangle> PosicoesOriginais { get; private set; } = new Dictionary<Guna2Button, Rectangle>();
+
+        public static List<Guna2DataGridView> Datas { get; private set; } = new List<Guna2DataGridView>();
+        public static List<Tuple<Guna2DataGridView, Rectangle>> PosicoesOriginaisData { get; private set; } = new List<Tuple<Guna2DataGridView, Rectangle>>();
+
+        public static List<Guna2TextBox> Textos { get; private set; } = new List<Guna2TextBox>();
+        public static Dictionary<Guna2TextBox, Rectangle> PosicoesOriginaisText { get; private set; } = new Dictionary<Guna2TextBox, Rectangle>();
+
+        public static List<Guna2HtmlLabel> Htmls { get; private set; } = new List<Guna2HtmlLabel>();
+        public static Dictionary<Guna2HtmlLabel, Rectangle> PosicoesOriginaisHtml { get; private set; } = new Dictionary<Guna2HtmlLabel, Rectangle>();
+
+        public static List<Guna2ComboBox> Combos { get; private set; } = new List<Guna2ComboBox>();
+        public static Dictionary<Guna2ComboBox, Rectangle> PosicoesOriginaisCombo { get; private set; } = new Dictionary<Guna2ComboBox, Rectangle>();
+
+        public static List<Guna2DateTimePicker> Agendas { get; private set; } = new List<Guna2DateTimePicker>();
+        public static Dictionary<Guna2DateTimePicker, Rectangle> PosicoesOriginaisAgenda { get; private set; } = new Dictionary<Guna2DateTimePicker, Rectangle>();
+    }
+
+
     internal class AgendamentoService
 
     {
@@ -22,13 +49,13 @@ namespace LuMoura.ul.DAL
 
 
 
-        //usar em casa
-        //private const string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LuMoura.DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+        //banco nuvem 
+        private const string connectionString = @"Data Source=lumouraserver.database.windows.net;Initial Catalog=LUMOURA.DB;User ID=adminn;Password=#Lumoura;Connect Timeout=60;Encrypt=True;";
 
-        // usar senac
-        private const string connectionString = "Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;";
-
-        public void NomeAndTempo(string servicoSelecionado, TextBox textPreco, TextBox textDuracao)
+        //usar senac
+        //private const string connectionString = "Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;";
+       
+        public void NomeAndTempo(string servicoSelecionado, Guna2TextBox textPreco, Guna2TextBox textDuracao)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -60,9 +87,10 @@ namespace LuMoura.ul.DAL
         }
 
 
-        public string Completar(DateTime dataSelecionada, DataGridView dataGridView, TextBox textHorario)
+        public Tuple<string, string> Completar(DateTime dataSelecionada, DataGridView dataGridView)
         {
             string dataFormatada = dataSelecionada.ToString("dd-MM-yyyy");
+            string horario = string.Empty;
 
             if (dataGridView.SelectedRows.Count > 0)
             {
@@ -81,7 +109,7 @@ namespace LuMoura.ul.DAL
                         {
                             if (dr.Read())
                             {
-                                textHorario.Text = dr["Hora"].ToString();
+                                horario = dr["Hora"].ToString();
                             }
                             else
                             {
@@ -91,8 +119,11 @@ namespace LuMoura.ul.DAL
                     }
                 }
             }
-            return dataFormatada;
+
+            return new Tuple<string, string>(dataFormatada, horario);
         }
+
+
 
         public void exibirHora(DataGridView dataGridView2, string data)
         {
@@ -100,13 +131,13 @@ namespace LuMoura.ul.DAL
             {
                 conn.Open();
 
-                // Substitua 'sua_data_selecionada' pela data desejada
-                string dataSelecionada = data;  // Substitua isso pela sua lógica para obter a data desejada
+                // Certifique-se de que a dataSelecionada seja do tipo DateTime
+                DateTime dataSelecionada = DateTime.Parse(data);
 
                 // Utilizando um parâmetro para evitar problemas de SQL Injection
                 string query = "SELECT Horarios.HorarioID, Horarios.Hora, Horarios.Disponivel " +
                                "FROM Horarios " +
-                               "LEFT JOIN Agendamentos ON Horarios.HorarioID = Agendamentos.FK_HorarioID AND Agendamentos.DataAgendamento = @DataAgenda " +
+                               "LEFT JOIN Agendamentos ON Horarios.HorarioID = Agendamentos.FK_HorarioID AND Agendamentos.DataAgendamento = CONVERT(DATE, @DataAgenda) " +
                                "WHERE Agendamentos.AgendamentoID IS NULL OR Horarios.Disponivel = 1";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -188,7 +219,11 @@ namespace LuMoura.ul.DAL
                                                 {
                                                     cmd.Parameters.AddWithValue("@ServicoID", servicoID);
                                                     cmd.Parameters.AddWithValue("@HorarioID", HorarioID + i); // Adiciona o índice para representar cada hora
-                                                    cmd.Parameters.AddWithValue("@Dataa", Dataa);
+
+                                                    // Convertendo a string para DateTime usando o formato esperado
+                                                    DateTime dataHora = DateTime.ParseExact(Dataa, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                                                    cmd.Parameters.AddWithValue("@Dataa", dataHora);
+
                                                     cmd.Parameters.AddWithValue("@Nome", Nome);
                                                     cmd.Parameters.AddWithValue("@Telefone", Telefone);
                                                     cmd.Parameters.AddWithValue("@Servico", Servico);
@@ -204,7 +239,7 @@ namespace LuMoura.ul.DAL
                                                     cmdUpdate.ExecuteNonQuery();
                                                 }
                                             }
-
+                                            MessageBox.Show("Horario agendado com sucesso!!");
                                             transaction.Commit(); // Confirma as alterações no banco de dados
                                         }
                                         catch (Exception ex)
@@ -224,6 +259,8 @@ namespace LuMoura.ul.DAL
                 }
             }
         }
+
+
 
 
         public void Cadastrar(string Nome, string Telefone, string Email)
@@ -536,19 +573,48 @@ namespace LuMoura.ul.DAL
                 {
                     try
                     {
+                        if (string.IsNullOrWhiteSpace(novoNome))
+                            throw new ArgumentException("O nome não pode ser vazio ou nulo.", nameof(novoNome));
+
+                        if (string.IsNullOrWhiteSpace(novoTelefone))
+                            throw new ArgumentException("O telefone não pode ser vazio ou nulo.", nameof(novoTelefone));
+
+                        if (string.IsNullOrWhiteSpace(novaDescricao))
+                            throw new ArgumentException("A descrição não pode ser vazia ou nula.", nameof(novaDescricao));
+
+                        if (string.IsNullOrWhiteSpace(novoServico))
+                            throw new ArgumentException("O serviço não pode ser vazio ou nulo.", nameof(novoServico));
+
+                        if (string.IsNullOrWhiteSpace(novaData))
+                            throw new ArgumentException("A data não pode ser vazia ou nula.", nameof(novaData));
+
                         AtualizarInformacoesAgendamento(conn, transaction, agendamentoID, novoNome, novoTelefone, novaDescricao, novoServico, novaData, novoHorarioID);
                         AtualizarDisponibilidadeHorarios(conn, transaction, agendamentoID, novoHorarioID);
 
                         transaction.Commit(); // Confirma as alterações no banco de dados
                     }
+                    catch (ArgumentException ex)
+                    {
+                        transaction.Rollback(); // Desfaz as alterações se ocorrer um erro
+                        MessageBox.Show($"Erro ao atualizar agendamento: {ex.Message}", "Erro de Argumento");
+                        return; // Saia da função após exibir a mensagem de erro
+                    }
                     catch (Exception ex)
                     {
                         transaction.Rollback(); // Desfaz as alterações se ocorrer um erro
-                        MessageBox.Show("Erro ao atualizar agendamento: " + ex.Message);
+                        MessageBox.Show($"Erro ao atualizar agendamento: {ex.Message}", "Erro Geral");
+                        return; // Saia da função após exibir a mensagem de erro
                     }
                 }
             }
+
+            // Se o código chegou até aqui, significa que todas as operações foram bem-sucedidas
+            MessageBox.Show("Agendamento atualizado com sucessooooo!");
         }
+
+
+
+
 
         private void AtualizarInformacoesAgendamento(SqlConnection conn, SqlTransaction transaction, int agendamentoID, string novoNome, string novoTelefone, string novaDescricao, string novoServico, string novaData, int novoHorarioID)
         {

@@ -166,36 +166,36 @@ namespace LuMoura.ul
 
         private void PreencherInformacoes()
         {
-            if (dataGridView2.SelectedRows.Count > 0)
-            {
-                int rowIndex = dataGridView2.SelectedRows[0].Index;
+            //if (dataGridView2.SelectedRows.Count > 0)
+            //{
+            //    int rowIndex = dataGridView2.SelectedRows[0].Index;
 
-                // Obtém a data selecionada do MonthCalendar2
-                DateTime dataSelecionada = monthCalendar2.SelectionStart;
+            //    // Obtém a data selecionada do MonthCalendar2
+            //    DateTime dataSelecionada = monthCalendar2.SelectionStart;
 
-                // Obtém o valor da coluna Hora da linha selecionada
-                string horaSelecionada = dataGridView2.Rows[rowIndex].Cells["Hora"].Value.ToString();
+            //    // Obtém o valor da coluna Hora da linha selecionada
+            //    string horaSelecionada = dataGridView2.Rows[rowIndex].Cells["Hora"].Value.ToString();
 
-                // Recupera as informações do serviço selecionado no ComboBox
-                string servicoSelecionado = comboServicos.SelectedItem?.ToString();
-                if (string.IsNullOrEmpty(servicoSelecionado))
-                {
-                    MessageBox.Show("Selecione um serviço primeiro.");
-                    return;
-                }
+            //    // Recupera as informações do serviço selecionado no ComboBox
+            //    string servicoSelecionado = comboServicos.SelectedItem?.ToString();
+            //    if (string.IsNullOrEmpty(servicoSelecionado))
+            //    {
+            //        MessageBox.Show("Selecione um serviço primeiro.");
+            //        return;
+            //    }
 
-                // Obtém as informações do serviço do banco de dados com base no serviço selecionado
-                AgendamentoService agendamentoService = new AgendamentoService();
-                agendamentoService.NomeAndTempo(servicoSelecionado, textPreco, textDuracao);
+            //    // Obtém as informações do serviço do banco de dados com base no serviço selecionado
+            //    AgendamentoService agendamentoService = new AgendamentoService();
+            //    agendamentoService.NomeAndTempo(servicoSelecionado, textPreco, textDuracao);
 
-                // Preenche as TextBox com as informações obtidas
-                textData.Text = dataSelecionada.ToString("yyyy-MM-dd");
-                textHorario.Text = horaSelecionada;
-            }
-            else
-            {
-                MessageBox.Show("Selecione um horário primeiro.");
-            }
+            //    // Preenche as TextBox com as informações obtidas
+            //    textData.Text = dataSelecionada.ToString("yyyy-MM-dd");
+            //    textHorario.Text = horaSelecionada;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Selecione um horário primeiro.");
+            //}
         }
 
         private void label15_Click(object sender, EventArgs e)

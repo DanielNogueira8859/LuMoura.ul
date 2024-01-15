@@ -22,7 +22,7 @@ namespace ProjetoIntegrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textBoxValor_TextChanged(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace ProjetoIntegrador
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void BtMenu_Click(object sender, EventArgs e)
@@ -62,6 +62,11 @@ namespace ProjetoIntegrador
         }
 
         private void textBoxNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdicionarServicos_Load(object sender, EventArgs e)
         {
 
         }

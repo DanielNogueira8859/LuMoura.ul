@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
         "projectName": "LuMoura.ul",
-        "projectPath": "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
-        "packagesPath": "C:\\Users\\gustavo.sgmingas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gustavo.sgmingas\\source\\repos\\Nova pasta (3)\\LuMoura.ul\\LuMoura.ul\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\LuMoura.ul.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\LuMoura.ul\\LuMoura.ul\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gustavo.sgmingas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -44,9 +44,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Bunifu.UI.WinForms": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
             "DevExpress.Data": {
               "target": "Package",
-              "version": "[23.1.6, )"
+              "version": "[23.2.3, )"
+            },
+            "DevExpress.Win.WinterJoySkin": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "Guna.UI2.WinForms": {
               "target": "Package",
@@ -72,9 +80,17 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Syncfusion.SfInput.WinForms": {
+              "target": "Package",
+              "version": "[24.1.44, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "XamForms.Controls.Calendar": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             },
             "bootstrap": {
               "target": "Package",
@@ -91,7 +107,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -103,7 +120,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
