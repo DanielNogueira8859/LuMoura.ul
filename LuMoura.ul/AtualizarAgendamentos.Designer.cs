@@ -1,6 +1,6 @@
 ﻿namespace LuMoura.ul
 {
-    partial class Form2
+    partial class AtualizarAgendamentos
     {
         /// <summary>
         /// Required designer variable.

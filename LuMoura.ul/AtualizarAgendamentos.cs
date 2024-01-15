@@ -17,13 +17,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LuMoura.ul
 {
-    public partial class Form2 : Form
+    public partial class AtualizarAgendamentos : Form
     {
         private const string connectionString = @"Data Source=lumouraserver.database.windows.net;Initial Catalog=LUMOURA.DB;User ID=adminn;Password=#Lumoura;Connect Timeout=60;Encrypt=True;";
         private const int larguraOriginalDoFormulario = 1126;
         private const int alturaOriginalDoFormulario = 559;
 
-        public Form2()
+        public AtualizarAgendamentos()
         {
             InitializeComponent();
             AdicionarBotoes();

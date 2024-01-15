@@ -472,4 +472,4 @@ C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\Xa
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\bin\Debug\net6.0-windows\XamForms.Controls.Calendar.dll
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AgendarHorarios.resources
 C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Form1.resources
-C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.Form2.resources
+C:\Users\User\Documents\GitHub\LuMoura.ul\LuMoura.ul\obj\Debug\net6.0-windows\LuMoura.ul.AtualizarAgendamentos.resources
