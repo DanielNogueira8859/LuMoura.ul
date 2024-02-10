@@ -317,8 +317,11 @@ namespace LuMoura.ul
 
         private void guna2Button1PesquisaMenu_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
+            Form2 form2 = new Form2();
+            form2.Show();
+
+            //fecha a pagina
+            this.Hide();
         }
 
         private void guna2Button2PesquisaExcluir_Click(object sender, EventArgs e)

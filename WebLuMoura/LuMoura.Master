@@ -4,43 +4,260 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Importações do Bootstrap e jQuery -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+	<!-- Estilos personalizados -->
+	<style>
+		body {
+			width: 100%; /* 100% da largura da tela */
+			max-width: none; /* Não ultrapassar a largura da tela */
+			overflow-x: hidden;
+			justify-content: center;
+			background: hsla(298, 68%, 90%, 1);
+			background: rgb(240,210,223);
+			background: radial-gradient(circle, rgba(240,210,223,1) 0%, rgba(235,226,184,1) 100%);
+		}
+
+		.other-screen-textbox-wrapper {
+			max-width: none; /* Remova a largura máxima para ocupar toda a largura disponível */
+		}
+
+		body header,
+		body footer {
+			width: 100%;
+			max-width: 100vw; /* Use 100vw para garantir que seja 100% da largura da tela */
+			overflow-x: hidden;
+		}
+
+		.sobre-nos {
+			padding: 20px;
+			background: rgb(250, 232, 241);
+			background: linear-gradient(90deg, rgba(250, 232, 241, 1) 0%, rgba(252, 252, 243, 1) 100%);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+			text-align: center; /* Centraliza o texto */
+			margin: 0 auto; /* Centraliza a div horizontalmente */
+			max-width: 900px; /* Limita a largura máxima */
+			border-radius: 30px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+			.sobre-nos h1 {
+				font-size: 35px;
+				margin-bottom: 20px;
+			}
+
+			.sobre-nos h2 {
+				font-size: 30px;
+				margin-bottom: 20px;
+			}
+
+			.sobre-nos p {
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+
+
+		.navbar {
+			background-color: transparent !important; /* Faz o menu transparente */
+		}
+
+		.navbar-nav .nav-link {
+			color: ghostwhite; /* Cor do texto do link */
+			font-size: 20px;
+			font-family: 'Sofia Sans Semi Condensed', sans-serif;
+			margin-top: 60px;
+			margin-right: 70px;
+			background-color: #1c1610;
+		}
+
+		.navbar-nav a {
+			color: ghostwhite;
+			font-family: 'Sofia Sans Semi Condensed', sans-serif;
+		}
+
+		.navbar-nav .nav-link:hover {
+			background: radial-gradient(circle, rgba(240,210,223,1) 0%, rgba(235,226,184,1) 100%);
+			border-radius: 10px;
+		}
+
+		.nav-link {
+			font-family: 'Sofia Sans Semi Condensed', sans-serif;
+			font-size: 15px;
+			color: ghostwhite;
+		}
+
+		#carouselExampleIndicators {
+			background-color: #F7F3E8;
+		}
+
+		.rodape {
+			min-height: 35vh;
+			background-color: #1c1610;
+			display: flex;
+			justify-content: left;
+			flex-wrap: wrap;
+		}
+
+		.contato {
+			margin-top: 25px;
+			align-items: center;
+			float: left;
+			margin-left: 20px;
+		}
+
+		.letras {
+			color: #F7F3E8;
+			font-family: 'Sofia Sans Semi Condensed', sans-serif;
+			font-size: 16px;
+			margin-top: 25px;
+		}
+
+		.logo-img {
+			height: 180px;
+			align-content: space-around;
+			float: left;
+			margin-left: 100px;
+			margin-bottom: 100px;
+		}
+
+
+
+		.menu {
+			background-color: #1c1610;
+			height: 270px;
+		}
+
+		#fale {
+			font-size: 16px;
+			color: #F7F3E8;
+			font-family: 'Sofia Sans Semi Condensed', sans-serif;
+		}
+	</style>
+
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+		<!-- Adicione estilos específicos da página aqui, se necessário -->
+	</asp:ContentPlaceHolder>
 </head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </div>
-                
+<!-- Cabeçalho -->
+<header>
+	<div class="foto-logo">
+		<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/416345120_762217625955181_6972878823747387536_n.png?_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_ohc=TZCM5dAMKjYAX8aiPSF&_nc_oc=AQkljZJgIeLIF0Wq3SN9oyfoWVsOZkpE7R52LsahWMA4Pim4ElBZfny4yDLuxrEPAc9U2BFU9qKM7_09RXZHWfuC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdREQNI78GZ6QM_FJwJIxs7FQy4pv0yK5KuIEzg1V6z0cQ&oe=65D1DB53"
+			alt="Logo" class="logo-img">
+	</div>
 
-                    <%--<asp:HyperLink NavigateUrl="~/WebForm1.aspx?id10" ID="HyperLink1" runat"server"></asp:HyperLink>--%>
-      
+	<div class="menu">
+		<span class="navbar-toggler-icon"></span>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#"></a>
 
-                
- 
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="WebForm4.aspx">HOME</a>
+						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="scrollToElement('rodape')">CONTATO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="scrollToElement('sobre-nos')">SOBRE NÓS</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
 
 
-            </asp:ContentPlaceHolder>
-        
-        
-    </form>
-  
-    
-</body>
+<form id="form1" runat="server">
+	<div>
+		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					</div>
+				</div>
+
+			</div>
+		</asp:ContentPlaceHolder>
+	</div>
+</form>
+
+
+<div id="sobre-nos" class="sobre-nos">
+	<div class="row">
+		<div class="col-lg-12">
+			<strong>
+				<h1>Sobre Nós</h1>
+				<br />
+				<h2>Bem-vinda ao Lu Moura - Espaço de beleza!</h2>
+				<br />
+			</strong>
+			<p>
+				Somos um salão especializado em unhas, cabelos, nail arts e design de sobrancelhas.
+               <br />
+				Oferecemos obras de arte nas unhas, variedade em esmaltes e estilos de cabelo,<br />
+				incluindo opções de coloração e tratamentos.
+               <br />
+				Nossa expertise em manicure e pedicure a importância deles na autoestima.<br />
+				Priorizamos sua satisfação e segurança, mantendo altos padrões de higiene e utilizando<br />
+				produtos de qualidade.
+               <br />
+				Visite-nos para experimentar um refúgio onde sua beleza é celebrada e aprimorada.<br />
+				Lu Moura - Onde cada detalhe é um passo em direção à sua expressão mais radiante.<br />
+
+				<p />
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Rodapé -->
+<footer>
+	<div id="rodape" class="rodape">
+		<div class="Logo-rodape">
+			<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/416345120_762217625955181_6972878823747387536_n.png?_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_ohc=TZCM5dAMKjYAX8aiPSF&_nc_oc=AQkljZJgIeLIF0Wq3SN9oyfoWVsOZkpE7R52LsahWMA4Pim4ElBZfny4yDLuxrEPAc9U2BFU9qKM7_09RXZHWfuC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdREQNI78GZ6QM_FJwJIxs7FQy4pv0yK5KuIEzg1V6z0cQ&oe=65D1DB53" alt="Logo" class="logo-img">
+		</div>
+		<div class="contato">
+			<h2 id="fale">FALE CONOSCO</h2>
+			<p class="letras">E-mail: luanda010894@gmail.com</p>
+			<p class="letras">Telefone: (13) 99129-4006</p>
+			<p class="letras">Rua Dorezópolis, N°472, Jardim Santa Clara, São Paulo </p>
+		</div>
+	</div>
+</footer>
+<script>
+	// Função para rolar suavemente até um elemento com base em seu ID
+	function scrollToElement(elementId) {
+		const element = document.getElementById(elementId);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+
+	// Adicione um manipulador de clique aos links do menu
+	document.querySelectorAll('.navbar-nav a.nav-link').forEach(function (link) {
+		link.addEventListener('click', function (event) {
+			event.preventDefault(); // Evita o comportamento padrão do link
+			const targetId = this.getAttribute('href').substring(1); // Obtém o ID do alvo removendo o caractere #
+			scrollToElement(targetId);
+		});
+	});
+</script>
 </html>
-    <div class="container-fluid p-5 bg-primary text-white text-center">
-        <p>
-    Roda pe
-
-</p>
-    </div>

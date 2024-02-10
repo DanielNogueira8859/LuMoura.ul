@@ -1,0 +1,103 @@
+﻿body, header, .rose-gold, #sobre-nos, .navbar, #carouselExampleIndicators {
+    background-color: #F7F3E8;
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+header {
+    padding: 5px;
+    height: 189px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+.rose-gold {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+#sobre-nos {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+.navbar {
+    background-color: transparent !important;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+.navbar-nav .nav-link {
+    color: #312E2E !important;
+    transition: color 0.5s ease;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #fff !important;
+        box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+    }
+
+#carouselExampleIndicators {
+    background-color: #F7F3E8;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+    margin-bottom: 0px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+/* Estilo para o botão AGENDAR */
+.btn-agendar {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+    .btn-agendar::before {
+        content: '';
+        width: 0;
+        height: 3em;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+        box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+    }
+
+    .btn-agendar:hover::before {
+        width: 9em;
+        box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+    }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}

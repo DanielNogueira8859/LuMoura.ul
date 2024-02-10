@@ -355,8 +355,8 @@ namespace LuMoura.ul
         }
         private void guna2ButtonMenu_Click(object sender, EventArgs e)
         {
-            Menu form = new Menu();
-            form.Show();
+            Form2 form2 = new Form2();
+            form2.Show();
 
             //fecha a pagina
             this.Hide();
@@ -364,7 +364,7 @@ namespace LuMoura.ul
 
         private void guna2ButtonExl_Atl_Click(object sender, EventArgs e)
         {
-            AtualizarAgendamento atualizarAgendamento = new AtualizarAgendamento();
+            AtualizarAgendamentos atualizarAgendamento = new AtualizarAgendamentos();
             atualizarAgendamento.Show();
         }
 
@@ -502,6 +502,11 @@ namespace LuMoura.ul
             }
             AgendamentoService agendarr = new AgendamentoService();
             agendarr.Atualizar(guna2DataGridView1exibirClientes);
+        }
+
+        private void guna2ButtonCadastrar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EventFlow</name>
+    </assembly>
+    <members>
+        <member name="P:EventFlow.Configuration.IEventFlowConfiguration.PopulateReadModelEventPageSize">
+            <summary>
+            Number of events to load from the event persistence when read models
+            are populated.
+            </summary>
+            <remarks>Defaults to 200</remarks>
+        </member>
+        <member name="P:EventFlow.Configuration.IEventFlowConfiguration.NumberOfRetriesOnOptimisticConcurrencyExceptions">
+            <summary>
+            Use by <c>OptimisticConcurrencyRetryStrategy</c> to determine the number
+            of retries when an optimistic concurrency exceptions is thrown from the
+            event persistence.
+            
+            If more fine grained control of is needed, a custom implementation of
+            <c>IOptimisticConcurrencyRetryStrategy</c> should be provided.
+            </summary>
+            <remarks>Defaults to 4</remarks>
+        </member>
+        <member name="P:EventFlow.Configuration.IEventFlowConfiguration.DelayBeforeRetryOnOptimisticConcurrencyExceptions">
+            <summary>
+            Use by <c>OptimisticConcurrencyRetryStrategy</c> to determine the delay
+            between retries when an optimistic concurrency exceptions is thrown from the
+            event persistence.
+            
+            If more fine grained control of is needed, a custom implementation of
+            <c>IOptimisticConcurrencyRetryStrategy</c> should be provided.
+            </summary>
+            <remarks>Defaults to 100 ms</remarks>
+        </member>
+        <member name="P:EventFlow.Configuration.IEventFlowConfiguration.ThrowSubscriberExceptions">
+            <summary>
+            Should EventFlow throw exceptions thrown by subscribers when publishing
+            domain events.
+            </summary>
+            <remarks>Defaults to false</remarks>
+        </member>
+        <member name="P:EventFlow.Configuration.IEventFlowConfiguration.IsAsynchronousSubscribersEnabled">
+            <summary>
+            Should EventFlow schedule a job to invoke asynchronous domain event
+            subscribers
+            </summary>
+            <remarks>Defaults to false</remarks>
+        </member>
+        <member name="P:EventFlow.Configuration.IEventFlowConfiguration.CancellationBoundary">
+            <summary>
+            The point of no return in the processing chain. Before
+            this point, cancellation is possible. After this point, the passed
+            cancellation token is ignored.
+            </summary>
+            <remarks>Defaults to
+            <see cref="F:EventFlow.Configuration.Cancellation.CancellationBoundary.BeforeCommittingEvents"/></remarks>
+        </member>
+        <member name="T:EventFlow.Core.AsyncHelper">
+            <summary>
+            A Helper class to run Asynchronous functions from synchronous ones
+            </summary>
+        </member>
+        <member name="T:EventFlow.Core.AsyncHelper.AsyncBridge">
+            <summary>
+            A class to bridge synchronous asynchronous methods
+            </summary>
+        </member>
+        <member name="M:EventFlow.Core.AsyncHelper.AsyncBridge.#ctor">
+            <summary>
+            Constructs the AsyncBridge by capturing the current
+            SynchronizationContext and replacing it with a new
+            ExclusiveSynchronizationContext.
+            </summary>
+        </member>
+        <member name="M:EventFlow.Core.AsyncHelper.AsyncBridge.Run(System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task})">
+            <summary>
+            Execute's an async task with a void return type
+            from a synchronous context
+            </summary>
+            <param name="task">Task to execute</param>
+            <param name="callback">Optional callback</param>
+        </member>
+        <member name="M:EventFlow.Core.AsyncHelper.AsyncBridge.Run``1(System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}})">
+            <summary>
+            Execute's an async task with a T return type
+            from a synchronous context
+            </summary>
+            <typeparam name="T">The type of the task</typeparam>
+            <param name="task">Task to execute</param>
+            <param name="callback">Optional callback</param>
+        </member>
+        <member name="M:EventFlow.Core.AsyncHelper.AsyncBridge.Run``1(System.Threading.Tasks.Task{``0},System.Action{``0})">
+            <summary>
+            Execute's an async task with a T return type
+            from a synchronous context
+            </summary>
+            <typeparam name="T">The type of the task</typeparam>
+            <param name="task">Task to execute</param>
+            <param name="callback">
+            The callback function that uses the result of the task
+            </param>
+        </member>
+        <member name="M:EventFlow.Core.AsyncHelper.AsyncBridge.Dispose">
+            <summary>
+            Disposes the object
+            </summary>
+        </member>
+        <member name="P:EventFlow.Core.AsyncHelper.Wait">
+            <summary>
+            Creates a new AsyncBridge. This should always be used in
+            conjunction with the using statement, to ensure it is disposed
+            </summary>
+        </member>
+        <member name="M:EventFlow.Core.AsyncHelper.FireAndForget(System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})">
+            <summary>
+            Runs a task with the "Fire and Forget" pattern using Task.Run,
+            and unwraps and handles exceptions
+            </summary>
+            <param name="task">A function that returns the task to run</param>
+            <param name="handle">Error handling action, null by default</param>
+        </member>
+        <member name="T:EventFlow.Core.Caching.DictionaryMemoryCache">
+            <summary>
+            Simple cache that disregards expiration times and keeps everything forever,
+            useful when doing tests.
+            </summary>
+        </member>
+        <member name="T:EventFlow.Core.Caching.IMemoryCache">
+            <summary>
+            Cache for run-time objects that cannot be serialized and must remain in memory.
+            </summary>
+        </member>
+        <member name="M:EventFlow.Core.GuidFactories.Comb.Create">
+            <summary>
+            Generates a GUID values that causes less index fragmentation when stored
+            in e.g. <c>uniqueidentifier</c> columns in MSSQL.
+            </summary>
+            <example>
+            2825c1d8-4587-cc55-08c1-08d6bde2765b
+            901337ba-c64b-c6d4-08c2-08d6bde2765b
+            45d57ba2-acc5-ce80-08c3-08d6bde2765b
+            36528acf-352a-c28c-08c4-08d6bde2765b
+            6fc88b5e-3782-c8fd-08c5-08d6bde2765b
+            </example>
+        </member>
+        <member name="M:EventFlow.Core.GuidFactories.Comb.CreateForString">
+            <summary>
+            Generates a GUID values that causes less index fragmentation when stored
+            in e.g. <c>nvarchar(n)</c> columns in MSSQL.
+            </summary>
+            <example>
+            899ee1b9-bde2-08d6-20d8-b7e20375c7c9
+            899f09b9-bde2-08d6-fd1c-5ec8f3349bcf
+            899f09ba-bde2-08d6-1521-51d781607ac4
+            899f09bb-bde2-08d6-7e6a-fe84f5237dc4
+            899f09bc-bde2-08d6-c2f0-276123e06fcf
+            </example>
+        </member>
+        <member name="T:EventFlow.Core.GuidFactories.Deterministic">
+            <summary>
+            Creates a name-based UUID using the algorithm from RFC 4122 §4.3.
+            http://code.logos.com/blog/2011/04/generating_a_deterministic_guid.html
+            </summary>
+        </member>
+        <member name="M:EventFlow.Core.ReflectionHelper.CompileMethodInvocation``1(System.Type,System.String,System.Type[])">
+            <summary>
+            Handles correct upcast. If no upcast was needed, then this could be exchanged to an <c>Expression.Call</c>
+            and an <c>Expression.Lambda</c>.
+            </summary>
+        </member>
+        <member name="M:EventFlow.Core.ReflectionHelper.CompileMethodInvocation``1(System.Reflection.MethodInfo)">
+            <summary>
+            Handles correct upcast. If no upcast was needed, then this could be exchanged to an <c>Expression.Call</c>
+            and an <c>Expression.Lambda</c>.
+            </summary>
+        </member>
+        <member name="M:EventFlow.EventStores.Files.FilesEventPersistence.GetRelativePath(System.String,System.String)">
+            <summary>
+            Creates a relative path from one file or folder to another.
+            </summary>
+            <param name="relativeTo">Contains the directory that defines the start of the relative path.</param>
+            <param name="path">Contains the path that defines the endpoint of the relative path.</param>
+            <returns>The relative path from the start directory to the end path or <c>toPath</c> if the paths are not related.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.UriFormatException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:EventFlow.Logs.Internals.Logging.ILog">
+            <summary>
+            Simple interface that represent a logger.
+            </summary>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.ILog.Log(EventFlow.Logs.Internals.Logging.LogLevel,System.Func{System.String},System.Exception,System.Object[])">
+            <summary>
+            Log a message the specified log level.
+            </summary>
+            <param name="logLevel">The log level.</param>
+            <param name="messageFunc">The message function.</param>
+            <param name="exception">An optional exception.</param>
+            <param name="formatParameters">Optional format parameters for the message generated by the messagefunc. </param>
+            <returns>true if the message was logged. Otherwise false.</returns>
+            <remarks>
+            Note to implementers: the message func should not be called if the loglevel is not enabled
+            so as not to incur performance penalties.
+            
+            To check IsEnabled call Log with only LogLevel and check the return value, no event will be written.
+            </remarks>
+        </member>
+        <member name="T:EventFlow.Logs.Internals.Logging.LogLevel">
+            <summary>
+            The log level.
+            </summary>
+        </member>
+        <member name="T:EventFlow.Logs.Internals.Logging.ILogProvider">
+            <summary>
+            Represents a way to get a <see cref="T:EventFlow.Logs.Internals.Logging.ILog"/>
+            </summary>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.ILogProvider.GetLogger(System.String)">
+            <summary>
+            Gets the specified named logger.
+            </summary>
+            <param name="name">Name of the logger.</param>
+            <returns>The logger reference.</returns>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.ILogProvider.OpenNestedContext(System.String)">
+            <summary>
+            Opens a nested diagnostics context. Not supported in EntLib logging.
+            </summary>
+            <param name="message">The message to add to the diagnostics context.</param>
+            <returns>A disposable that when disposed removes the message from the context.</returns>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.ILogProvider.OpenMappedContext(System.String,System.Object,System.Boolean)">
+            <summary>
+            Opens a mapped diagnostics context. Not supported in EntLib logging.
+            </summary>
+            <param name="key">A key.</param>
+            <param name="value">A value.</param>
+            <param name="destructure"></param>
+            <returns>A disposable that when disposed removes the map from the context.</returns>
+        </member>
+        <member name="T:EventFlow.Logs.Internals.Logging.LogProvider">
+            <summary>
+            Provides a mechanism to create instances of <see cref="T:EventFlow.Logs.Internals.Logging.ILog" /> objects.
+            </summary>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.LogProvider.SetCurrentLogProvider(EventFlow.Logs.Internals.Logging.ILogProvider)">
+            <summary>
+            Sets the current log provider.
+            </summary>
+            <param name="logProvider">The log provider.</param>
+        </member>
+        <member name="P:EventFlow.Logs.Internals.Logging.LogProvider.IsDisabled">
+            <summary>
+            Gets or sets a value indicating whether this is logging is disabled.
+            </summary>
+            <value>
+            <c>true</c> if logging is disabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:EventFlow.Logs.Internals.Logging.LogProvider.OnCurrentLogProviderSet">
+            <summary>
+            Sets an action that is invoked when a consumer of your library has called SetCurrentLogProvider. It is 
+            important that hook into this if you are using child libraries (especially ilmerged ones) that are using
+            LibLog (or other logging abstraction) so you adapt and delegate to them.
+            <see cref="M:EventFlow.Logs.Internals.Logging.LogProvider.SetCurrentLogProvider(EventFlow.Logs.Internals.Logging.ILogProvider)"/> 
+            </summary>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.LogProvider.For``1">
+            <summary>
+            Gets a logger for the specified type.
+            </summary>
+            <typeparam name="T">The type whose name will be used for the logger.</typeparam>
+            <returns>An instance of <see cref="T:EventFlow.Logs.Internals.Logging.ILog"/></returns>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.LogProvider.GetLogger(System.Type,System.String)">
+            <summary>
+            Gets a logger for the specified type.
+            </summary>
+            <param name="type">The type whose name will be used for the logger.</param>
+            <param name="fallbackTypeName">If the type is null then this name will be used as the log name instead</param>
+            <returns>An instance of <see cref="T:EventFlow.Logs.Internals.Logging.ILog"/></returns>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.LogProvider.GetLogger(System.String)">
+            <summary>
+            Gets a logger with the specified name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>An instance of <see cref="T:EventFlow.Logs.Internals.Logging.ILog"/></returns>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.LogProvider.OpenNestedContext(System.String)">
+            <summary>
+            Opens a nested diagnostics context.
+            </summary>
+            <param name="message">A message.</param>
+            <returns>An <see cref="T:System.IDisposable"/> that closes context when disposed.</returns>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.LogProvider.OpenMappedContext(System.String,System.Object,System.Boolean)">
+            <summary>
+            Opens a mapped diagnostics context.
+            </summary>
+            <param name="key">A key.</param>
+            <param name="value">A value.</param>
+            <param name="destructure"></param>
+            <returns>An <see cref="T:System.IDisposable"/> that closes context when disposed.</returns>
+        </member>
+        <member name="T:EventFlow.Logs.Internals.Logging.LogProviders.LoupeLogProvider.WriteDelegate">
+            <summary>
+            The form of the Loupe Log.Write method we're using
+            </summary>
+        </member>
+        <member name="P:EventFlow.Logs.Internals.Logging.LogProviders.LoupeLogProvider.ProviderIsAvailableOverride">
+            <summary>
+            Gets or sets a value indicating whether [provider is available override]. Used in tests.
+            </summary>
+            <value>
+            <c>true</c> if [provider is available override]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:EventFlow.Logs.Internals.Logging.LogProviders.LogMessageFormatter.SimulateStructuredLogging(System.Func{System.String},System.Object[])">
+            <summary>
+            Some logging frameworks support structured logging, such as serilog. This will allow you to add names to structured data in a format string:
+            For example: Log("Log message to {user}", user). This only works with serilog, but as the user of LibLog, you don't know if serilog is actually 
+            used. So, this class simulates that. it will replace any text in {curly braces} with an index number. 
+            
+            "Log {message} to {user}" would turn into => "Log {0} to {1}". Then the format parameters are handled using regular .net string.Format.
+            </summary>
+            <param name="messageBuilder">The message builder.</param>
+            <param name="formatParameters">The format parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EventFlow.MetadataProviders.AddGuidMetadataProvider">
+            <summary>
+            Adds key <c>guid</c> with a new <c>Guid</c> for every event (used for testing)
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -58,11 +58,7 @@ namespace LuMoura.ul
 
         private void guna2Button3_Click_1(object sender, EventArgs e)
         {
-            AgendarHorario form = new AgendarHorario();
-            form.Show();
-
-            //fecha a pagina
-            this.Hide();
+           
         }
     }
 }

@@ -50,6 +50,59 @@
           }
         }
       },
+      "Dapper/1.50.2": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Data.SqlClient": "4.8.5",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.Reflection.Emit.Lightweight": "4.7.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.7.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.XDocument": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Dapper.dll": {
+            "assemblyVersion": "1.50.2.0",
+            "fileVersion": "1.50.2.0"
+          }
+        }
+      },
+      "dbup-core/4.1.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.Diagnostics.TraceSource": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/dbup-core.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "dbup-sqlserver/4.1.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Data.SqlClient": "4.8.5",
+          "dbup-core": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/dbup-sqlserver.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
       "DevExpress.Data/23.2.3": {
         "dependencies": {
           "System.Drawing.Common": "4.7.2"
@@ -66,6 +119,44 @@
           "lib/netcoreapp3.0/DevExpress.WinterJoySkin.dll": {
             "assemblyVersion": "1.0.2.0",
             "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "EventFlow/0.83.4713": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/EventFlow.dll": {
+            "assemblyVersion": "0.83.4713.0",
+            "fileVersion": "0.83.4713.0"
+          }
+        }
+      },
+      "EventFlow.MsSql/0.83.4713": {
+        "dependencies": {
+          "EventFlow.Sql": "0.83.4713",
+          "dbup-sqlserver": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/EventFlow.MsSql.dll": {
+            "assemblyVersion": "0.83.4713.0",
+            "fileVersion": "0.83.4713.0"
+          }
+        }
+      },
+      "EventFlow.Sql/0.83.4713": {
+        "dependencies": {
+          "Dapper": "1.50.2",
+          "EventFlow": "0.83.4713",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "dbup-core": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/EventFlow.Sql.dll": {
+            "assemblyVersion": "0.83.4713.0",
+            "fileVersion": "0.83.4713.0"
           }
         }
       },
@@ -929,6 +1020,33 @@
           "Microsoft.NETCore.Platforms": "3.1.4",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Diagnostics.TraceSource/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.4",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Diagnostics.TraceSource.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.24705.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Diagnostics.TraceSource.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.24705.1"
+          }
         }
       },
       "System.Diagnostics.Tracing/4.3.0": {
@@ -1943,6 +2061,27 @@
       "path": "bunifu.utils/1.0.6",
       "hashPath": "bunifu.utils.1.0.6.nupkg.sha512"
     },
+    "Dapper/1.50.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6VcCiiOxVhgMwgMCuQuaff8I5IyDamrzeOjuUH1iMExh8R5TJqwkVCpwdVJGQdwSCqWsQA/PerrrK7T6mONthQ==",
+      "path": "dapper/1.50.2",
+      "hashPath": "dapper.1.50.2.nupkg.sha512"
+    },
+    "dbup-core/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nNlmRyubk6ytvdbV0ERNyJ53TbEc28xkVef40Uk6ufi/Fze/eGHa+q6Mfwsz2T7sJeNjTVZvYXa/Z43Ez9TDxQ==",
+      "path": "dbup-core/4.1.0",
+      "hashPath": "dbup-core.4.1.0.nupkg.sha512"
+    },
+    "dbup-sqlserver/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ThNRKeZBDlgw4PErMuBU2GnsWeK6m9WFrHlQy9wmMUJfDE90/DPO74idmHEoMCyRK5TqanrQICh9jgfaJsBQ9g==",
+      "path": "dbup-sqlserver/4.1.0",
+      "hashPath": "dbup-sqlserver.4.1.0.nupkg.sha512"
+    },
     "DevExpress.Data/23.2.3": {
       "type": "package",
       "serviceable": true,
@@ -1956,6 +2095,27 @@
       "sha512": "sha512-LmwJltgWcUIXlyIJCwl13d4ajYHnMifdqoRwbyv39SYmvaMNH19JMNg5/nxG8WG7b2DkQwSIy8aQRj9fXVQ7JA==",
       "path": "devexpress.win.winterjoyskin/1.0.2",
       "hashPath": "devexpress.win.winterjoyskin.1.0.2.nupkg.sha512"
+    },
+    "EventFlow/0.83.4713": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iGOnKVKiGgzQiUbFuDPGhPNWFvBTbbq2Zdyx03QvLzwHUa0sWQ+3+1s61/4Ljbn5/imltEZUzefBgyE1L8qAYQ==",
+      "path": "eventflow/0.83.4713",
+      "hashPath": "eventflow.0.83.4713.nupkg.sha512"
+    },
+    "EventFlow.MsSql/0.83.4713": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C3j+ZNdNeUOnDzYYi0MxOhHLXHuvvhuvDX7yl8sepAmOU26iKBybFCB1qq3X1+WvCqKVr+FhiKQFz9gQuXL64g==",
+      "path": "eventflow.mssql/0.83.4713",
+      "hashPath": "eventflow.mssql.0.83.4713.nupkg.sha512"
+    },
+    "EventFlow.Sql/0.83.4713": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X/xBm2OhrXg5/ADVbM7jrPDUnN6rRB6zWDL9JfhSqUo9Xj8PoXsyDSnWL4Mu6ag7C7gUOJX7OlOTPNFT1LDz7A==",
+      "path": "eventflow.sql/0.83.4713",
+      "hashPath": "eventflow.sql.0.83.4713.nupkg.sha512"
     },
     "Google.Protobuf/3.14.0": {
       "type": "package",
@@ -2488,6 +2648,13 @@
       "sha512": "sha512-UUvkJfSYJMM6x527dJg2VyWPSRqIVB0Z7dbjHst1zmwTXz5CcXSYJFWRpuigfbO1Lf7yfZiIaEUesfnl/g5EyA==",
       "path": "system.diagnostics.tools/4.3.0",
       "hashPath": "system.diagnostics.tools.4.3.0.nupkg.sha512"
+    },
+    "System.Diagnostics.TraceSource/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
+      "path": "system.diagnostics.tracesource/4.3.0",
+      "hashPath": "system.diagnostics.tracesource.4.3.0.nupkg.sha512"
     },
     "System.Diagnostics.Tracing/4.3.0": {
       "type": "package",

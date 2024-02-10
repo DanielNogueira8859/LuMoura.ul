@@ -7,8 +7,11 @@ using System.Data.SqlClient;
 
 namespace ProjetoIntegrador.DAL
 {
+
     internal class ServicosDAL
     {
+        private const string connectionString = @"Data Source=lumouraserver.database.windows.net;Initial Catalog=LUMOURA.DB;User ID=adminn;Password=#Lumoura;Connect Timeout=60;Encrypt=True;";
+
         /// <summary>
         /// 
         /// </summary>
@@ -23,7 +26,7 @@ namespace ProjetoIntegrador.DAL
             string textoComPonto = textoComVirgula.Replace(",", ".");
 
             /// >ATUALIZAR< /// ADICIONAR LINK DO BANCO DE DADOS///
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(connectionString);
 
             conn.Open();
 
@@ -43,7 +46,7 @@ namespace ProjetoIntegrador.DAL
 
         {
             /// >ATUALIZAR< /// ADICIONAR LINK DO BANCO DE DADOS///
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(connectionString);
 
             conn.Open();
 
@@ -63,7 +66,7 @@ namespace ProjetoIntegrador.DAL
             string textoComPonto1 = textoComVirgula1.Replace(",", ".");
 
             /// >ATUALIZAR< /// ADICIONAR LINK DO BANCO DE DADOS///
-            SqlConnection conn = new SqlConnection(@"Data Source=FAC0539709W10-1;Initial Catalog=LuMoura.DB;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlConnection conn = new SqlConnection(connectionString);
 
             conn.Open();
             

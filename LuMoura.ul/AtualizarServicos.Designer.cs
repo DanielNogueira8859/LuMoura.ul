@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -44,7 +42,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.textBoxID1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxTempo1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxValor1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -60,12 +65,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.guna2Button2);
+            this.groupBox1.Controls.Add(this.guna2Button1);
             this.groupBox1.Controls.Add(this.textBoxID1);
             this.groupBox1.Controls.Add(this.textBoxTempo1);
             this.groupBox1.Controls.Add(this.textBoxValor1);
@@ -86,9 +94,27 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CustomizableEdges = customizableEdges3;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Plum;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(18, 331);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.guna2Button1.Size = new System.Drawing.Size(180, 24);
+            this.guna2Button1.TabIndex = 39;
+            this.guna2Button1.Text = "Menu";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // textBoxID1
             // 
-            this.textBoxID1.CustomizableEdges = customizableEdges1;
+            this.textBoxID1.CustomizableEdges = customizableEdges5;
             this.textBoxID1.DefaultText = "";
             this.textBoxID1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBoxID1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -102,13 +128,13 @@
             this.textBoxID1.PasswordChar = '\0';
             this.textBoxID1.PlaceholderText = "";
             this.textBoxID1.SelectedText = "";
-            this.textBoxID1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.textBoxID1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.textBoxID1.Size = new System.Drawing.Size(100, 27);
             this.textBoxID1.TabIndex = 38;
             // 
             // textBoxTempo1
             // 
-            this.textBoxTempo1.CustomizableEdges = customizableEdges3;
+            this.textBoxTempo1.CustomizableEdges = customizableEdges7;
             this.textBoxTempo1.DefaultText = "";
             this.textBoxTempo1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBoxTempo1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -122,13 +148,13 @@
             this.textBoxTempo1.PasswordChar = '\0';
             this.textBoxTempo1.PlaceholderText = "";
             this.textBoxTempo1.SelectedText = "";
-            this.textBoxTempo1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.textBoxTempo1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.textBoxTempo1.Size = new System.Drawing.Size(100, 27);
             this.textBoxTempo1.TabIndex = 37;
             // 
             // textBoxValor1
             // 
-            this.textBoxValor1.CustomizableEdges = customizableEdges5;
+            this.textBoxValor1.CustomizableEdges = customizableEdges9;
             this.textBoxValor1.DefaultText = "";
             this.textBoxValor1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBoxValor1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -142,13 +168,13 @@
             this.textBoxValor1.PasswordChar = '\0';
             this.textBoxValor1.PlaceholderText = "";
             this.textBoxValor1.SelectedText = "";
-            this.textBoxValor1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.textBoxValor1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.textBoxValor1.Size = new System.Drawing.Size(100, 27);
             this.textBoxValor1.TabIndex = 36;
             // 
             // textBoxDes1
             // 
-            this.textBoxDes1.CustomizableEdges = customizableEdges7;
+            this.textBoxDes1.CustomizableEdges = customizableEdges11;
             this.textBoxDes1.DefaultText = "";
             this.textBoxDes1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBoxDes1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -162,13 +188,13 @@
             this.textBoxDes1.PasswordChar = '\0';
             this.textBoxDes1.PlaceholderText = "";
             this.textBoxDes1.SelectedText = "";
-            this.textBoxDes1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.textBoxDes1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.textBoxDes1.Size = new System.Drawing.Size(100, 27);
             this.textBoxDes1.TabIndex = 35;
             // 
             // textBoxNome2
             // 
-            this.textBoxNome2.CustomizableEdges = customizableEdges9;
+            this.textBoxNome2.CustomizableEdges = customizableEdges13;
             this.textBoxNome2.DefaultText = "";
             this.textBoxNome2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBoxNome2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -182,13 +208,13 @@
             this.textBoxNome2.PasswordChar = '\0';
             this.textBoxNome2.PlaceholderText = "";
             this.textBoxNome2.SelectedText = "";
-            this.textBoxNome2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.textBoxNome2.ShadowDecoration.CustomizableEdges = customizableEdges14;
             this.textBoxNome2.Size = new System.Drawing.Size(100, 27);
             this.textBoxNome2.TabIndex = 4;
             // 
             // guna2TextBox1
             // 
-            this.guna2TextBox1.CustomizableEdges = customizableEdges11;
+            this.guna2TextBox1.CustomizableEdges = customizableEdges15;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -202,13 +228,13 @@
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             this.guna2TextBox1.Size = new System.Drawing.Size(310, 27);
             this.guna2TextBox1.TabIndex = 3;
             // 
             // BtAtualizar
             // 
-            this.BtAtualizar.CustomizableEdges = customizableEdges13;
+            this.BtAtualizar.CustomizableEdges = customizableEdges17;
             this.BtAtualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtAtualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtAtualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -218,7 +244,7 @@
             this.BtAtualizar.ForeColor = System.Drawing.Color.White;
             this.BtAtualizar.Location = new System.Drawing.Point(565, 332);
             this.BtAtualizar.Name = "BtAtualizar";
-            this.BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            this.BtAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges18;
             this.BtAtualizar.Size = new System.Drawing.Size(96, 23);
             this.BtAtualizar.TabIndex = 34;
             this.BtAtualizar.Text = "Atualizar";
@@ -226,7 +252,7 @@
             // 
             // BtBuscar
             // 
-            this.BtBuscar.CustomizableEdges = customizableEdges15;
+            this.BtBuscar.CustomizableEdges = customizableEdges19;
             this.BtBuscar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtBuscar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtBuscar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -236,7 +262,7 @@
             this.BtBuscar.ForeColor = System.Drawing.Color.White;
             this.BtBuscar.Location = new System.Drawing.Point(345, 56);
             this.BtBuscar.Name = "BtBuscar";
-            this.BtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.BtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges20;
             this.BtBuscar.Size = new System.Drawing.Size(96, 23);
             this.BtBuscar.TabIndex = 33;
             this.BtBuscar.Text = "Buscar";
@@ -266,10 +292,10 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Thistle;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 139);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 99);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(410, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(423, 192);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -313,6 +339,24 @@
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Atualizar Servicos";
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.CustomizableEdges = customizableEdges1;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.Plum;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(261, 332);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2Button2.Size = new System.Drawing.Size(180, 24);
+            this.guna2Button2.TabIndex = 40;
+            this.guna2Button2.Text = "Excluir";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // AtualizarServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -349,5 +393,7 @@
         private Guna.UI2.WinForms.Guna2TextBox textBoxTempo1;
         private Guna.UI2.WinForms.Guna2TextBox textBoxID1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

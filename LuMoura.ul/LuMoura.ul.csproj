@@ -13,6 +13,7 @@
     <PackageReference Include="Bunifu.UI.WinForms" Version="6.3.0" />
     <PackageReference Include="DevExpress.Data" Version="23.2.3" />
     <PackageReference Include="DevExpress.Win.WinterJoySkin" Version="1.0.2" />
+    <PackageReference Include="EventFlow.MsSql" Version="0.83.4713" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
     <PackageReference Include="Hora" Version="0.0.3" />
     <PackageReference Include="Hourglass" Version="1.0.2" />

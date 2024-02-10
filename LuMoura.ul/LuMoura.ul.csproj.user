@@ -4,12 +4,6 @@
     <Compile Update="AdicionarServicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AgendarHorario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="AtualizarAgendamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="AtualizarServicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -19,16 +13,13 @@
     <Compile Update="AgendarHorarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="AtualizarAgendamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Menu.cs">
+    <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ServicoFeito.cs">
+    <Compile Update="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -12,9 +12,9 @@ namespace WebLuMoura
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idQVeioDaUrl = Request.QueryString["id"].ToString();
+            //string idQVeioDaUrl = Request.QueryString["id"].ToString();
 
-            LblId.Text = idQVeioDaUrl;
+            //LblId.Text = idQVeioDaUrl;
 
 
 

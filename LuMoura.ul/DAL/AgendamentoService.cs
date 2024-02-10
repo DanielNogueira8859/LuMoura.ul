@@ -649,16 +649,6 @@ namespace LuMoura.ul.DAL
             }
         }
 
-
-
-
-
-
-
-
-
-
-
     }
 
 }

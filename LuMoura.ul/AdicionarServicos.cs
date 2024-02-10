@@ -37,8 +37,8 @@ namespace ProjetoIntegrador
 
         private void BtMenu_Click(object sender, EventArgs e)
         {
-            Menu form = new Menu();
-            form.Show();
+            Form2 form2 = new Form2();
+            form2.Show();
 
             //fecha a pagina
             this.Hide();
@@ -58,7 +58,7 @@ namespace ProjetoIntegrador
         {
             DAL.ServicosDAL mensagem = new DAL.ServicosDAL();
             mensagem.AdicionarServico(textBoxNome.Text, textBoxDes.Text, Convert.ToDecimal(textBoxValor.Text), Convert.ToInt32(textBoxTempo.Text));
-            this.Hide();
+           
         }
 
         private void textBoxNome_TextChanged(object sender, EventArgs e)
